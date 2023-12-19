@@ -7,7 +7,7 @@ import reactnativeEmblem from "@/shared/assets/emblems/reactnative-emblem.svg"
 
 import { useState } from "react"
 
-export function useNavbar() {
+export function useNavigation() {
   const [hover, setHover] = useState(false)
   const items: NavbarItems = [
     {
@@ -32,7 +32,7 @@ export function useNavbar() {
           {
             title: "Formação em React",
             emblem: reactEmblem,
-            new: true,
+            new: false,
           },
           {
             title: "Formação em Node.JS",
@@ -42,7 +42,7 @@ export function useNavbar() {
           {
             title: "Formação em React Native",
             emblem: reactnativeEmblem,
-            new: true,
+            new: false,
           },
         ],
       },

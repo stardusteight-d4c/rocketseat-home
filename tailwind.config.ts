@@ -17,6 +17,9 @@ const config: Config = {
           mid: "#1E1E1E",
           str: "#121214",
         },
+        new: {
+          light: "#FFCD1E",
+        },
         neutral: "#C4C4CC",
       },
     },

@@ -1,6 +1,6 @@
-import { NavbarLogo } from "./components/NavbarLogo"
-import { NavbarNavigation } from "./components/NavbarNavigation"
-import { NavbarRoot } from "./components/NavbarRoot"
+import { NavbarLogo } from "./components/Logo"
+import { NavbarNavigation } from "./components/Navigation"
+import { NavbarRoot } from "./components/Root"
 
 export const Navbar = {
   Root: NavbarRoot,

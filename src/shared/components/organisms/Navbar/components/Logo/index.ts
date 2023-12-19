@@ -1,0 +1,1 @@
+export { NavbarLogo } from "./NavbarLogo"
