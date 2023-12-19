@@ -21,24 +21,24 @@ export function useNavbar() {
             new: true,
           },
           {
-            title: "Formação Full-Stack",
-            emblem: fullstackEmblem,
-            new: false,
-          },
-          {
-            title: "Formação em Node.JS",
-            emblem: nodejsEmblem,
-            new: false,
-          },
-          {
             title: "Formação em IA",
             emblem: aiEmblem,
             new: true,
           },
           {
+            title: "Formação Full-Stack",
+            emblem: fullstackEmblem,
+            new: false,
+          },
+          {
             title: "Formação em React",
             emblem: reactEmblem,
             new: true,
+          },
+          {
+            title: "Formação em Node.JS",
+            emblem: nodejsEmblem,
+            new: false,
           },
           {
             title: "Formação em React Native",

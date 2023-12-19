@@ -44,7 +44,7 @@ const NavbarListItem: React.FC<NavbarListItemProps> = ({
         </span>
         {item.dropdownContent && hover.isHover && (
           <div className="pt-[25px] mt-[35px] absolute left-1/2 -translate-x-1/2">
-            <div className="bg-dark-str z-[100] px-5 pt-4 pb-10 text-gray-200 max-h-[345px] w-screen">
+            <div className="bg-dark-str z-[100] border-b border-b-gray-600/[0.50] shadow-md px-5 pt-4 pb-10 text-gray-200 w-screen">
               <NavbarDropdownContent item={item} />
             </div>
           </div>
@@ -69,7 +69,7 @@ const NavbarDropdownContent: React.FC<NavbarDropdownContentProps> = ({
           <h2 className="mb-4 uppercase font-medium text-gray-300">
             Formações em programação
           </h2>
-          <div className="flex items-center flex-wrap">
+          <div className="grid grid-cols-2 gap-x-16 w-full">
             {item.dropdownContent?.formations.map((formation, index) => (
               <FormationRedirect key={index} formation={formation} />
             ))}
