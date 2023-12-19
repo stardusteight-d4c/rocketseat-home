@@ -8,7 +8,7 @@ import reactnativeEmblem from "@/shared/assets/emblems/reactnative-emblem.svg"
 import discoverLight from "@/shared/assets/discover-light.svg"
 
 export function useNavbarItemsData() {
-  const items = [
+  const items: NavbarItems = [
     {
       title: "Formações",
       dropdownContent: {

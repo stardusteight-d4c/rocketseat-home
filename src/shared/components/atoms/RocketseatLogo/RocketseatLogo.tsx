@@ -75,7 +75,7 @@ export const RocketseatLogo: React.FC<RocketseatLogoProps> = ({
       </g>
       <defs>
         <clipPath id="clip0_5_6">
-          <rect width="243" height="24" fill="white" />
+          <rect width={width} height={height} fill="white" />
         </clipPath>
       </defs>
     </svg>
