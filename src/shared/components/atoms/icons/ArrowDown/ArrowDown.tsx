@@ -22,9 +22,9 @@ export const ArrowDown: React.FC<ArrowDownProps> = ({
       <path
         d="M8.66998 10.5001L12.67 14.5001L16.67 10.5001"
         stroke="#C4C4CC"
-        stroke-width="1.5"
-        stroke-linecap="square"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="square"
+        strokeLinejoin="round"
       />
     </svg>
   )

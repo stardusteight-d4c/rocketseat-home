@@ -6,8 +6,10 @@ import reactEmblem from "@/shared/assets/emblems/react-emblem.svg"
 import reactnativeEmblem from "@/shared/assets/emblems/reactnative-emblem.svg"
 
 import discoverLight from "@/shared/assets/discover-light.svg"
+import { useState } from "react"
 
-export function useNavbarItemsData() {
+export function useNavbar() {
+  const [hover, setHover] = useState(false)
   const items: NavbarItems = [
     {
       title: "Formações",
@@ -61,13 +63,27 @@ export function useNavbarItemsData() {
         },
       },
     },
-    { title: "Depoimentos" },
+    { title: "Depoimentos", dropdownContent: undefined },
     {
       title: "Para empresas",
+      dropdownContent: undefined,
     },
   ]
 
+  function handleMouseEnter() {
+    setHover(true)
+  }
+
+  function handleMouseLeave() {
+    setHover(false)
+  }
+
   return {
+    hover: {
+      handleMouseEnter,
+      handleMouseLeave,
+      isHover: hover,
+    },
     items,
   }
 }
