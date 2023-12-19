@@ -3,6 +3,7 @@
 import { ArrowDown } from "@/shared/components/atoms/icons"
 
 import { useNavbar } from "../hooks/useNavbar"
+import { FormationRedirect } from "@/shared/components/molecules/FormationRedirect"
 
 interface NavbarNavigationProps
   extends React.HTMLAttributes<HTMLUListElement> {}
@@ -42,8 +43,10 @@ const NavbarListItem: React.FC<NavbarListItemProps> = ({
           {item.dropdownContent && <ArrowDown className="-ml-1" />}
         </span>
         {item.dropdownContent && hover.isHover && (
-          <div className="bg-dark-str z-[100] w-full px-5 pt-4 pb-10 text-gray-200 max-w-[1256px]">
-            <NavbarDropdownContent item={item} />
+          <div className="pt-[25px] mt-[35px] absolute left-1/2 -translate-x-1/2">
+            <div className="bg-dark-str z-[100] px-5 pt-4 pb-10 text-gray-200 max-h-[345px] w-screen">
+              <NavbarDropdownContent item={item} />
+            </div>
           </div>
         )}
       </li>
@@ -62,8 +65,15 @@ const NavbarDropdownContent: React.FC<NavbarDropdownContentProps> = ({
   function renderFormationsDropdown() {
     if (item.dropdownContent?.formations) {
       return (
-        <div>
-          <h2>Formações em programação</h2>
+        <div className="max-w-[1256px] mx-auto">
+          <h2 className="mb-4 uppercase font-medium text-gray-300">
+            Formações em programação
+          </h2>
+          <div className="flex items-center flex-wrap">
+            {item.dropdownContent?.formations.map((formation, index) => (
+              <FormationRedirect key={index} formation={formation} />
+            ))}
+          </div>
         </div>
       )
     }
