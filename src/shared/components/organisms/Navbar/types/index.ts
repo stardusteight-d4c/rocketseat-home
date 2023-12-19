@@ -19,7 +19,6 @@ interface NavbarFreeContentItem {
   title: string
   dropdownContent: {
     card: {
-      logo: any
       title: string
       subtitle: string
       action: {
@@ -27,6 +26,7 @@ interface NavbarFreeContentItem {
         link: string
       }
     }
+    contentList: string[]
     formations?: undefined
   }
 }

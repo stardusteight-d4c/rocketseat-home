@@ -5,7 +5,6 @@ import aiEmblem from "@/shared/assets/emblems/ai-emblem.svg"
 import reactEmblem from "@/shared/assets/emblems/react-emblem.svg"
 import reactnativeEmblem from "@/shared/assets/emblems/reactnative-emblem.svg"
 
-import discoverLight from "@/shared/assets/discover-light.svg"
 import { useState } from "react"
 
 export function useNavbar() {
@@ -52,7 +51,6 @@ export function useNavbar() {
       title: "Conteúdos gratuitos",
       dropdownContent: {
         card: {
-          logo: discoverLight,
           title: "Aprenda programação do zero e DE GRAÇA",
           subtitle:
             "No Discover você vai descomplicar a programação, aprender a criar seu primeiro site com a mão na massa e iniciar sua transição de carreira",
@@ -61,6 +59,12 @@ export function useNavbar() {
             link: "https://www.rocketseat.com.br/discover",
           },
         },
+        contentList: [
+          "Blog",
+          "Teste seus conhecimentos em React",
+          "Teste seus conhecimentos em Node",
+          "Teste seus conhecimentos em JavaScript",
+        ],
       },
     },
     { title: "Depoimentos", dropdownContent: undefined },

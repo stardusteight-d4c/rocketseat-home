@@ -1,4 +1,4 @@
-import { RocketseatLogo } from "@/shared/components/atoms/RocketseatLogo"
+import { RocketseatLogo } from "@/shared/components/atoms/brand/RocketseatLogo"
 
 interface NavbarLogoProps extends React.HTMLAttributes<HTMLDivElement> {}
 

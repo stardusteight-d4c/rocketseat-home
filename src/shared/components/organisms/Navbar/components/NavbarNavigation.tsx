@@ -4,6 +4,7 @@ import { ArrowDown } from "@/shared/components/atoms/icons"
 
 import { useNavbar } from "../hooks/useNavbar"
 import { FormationRedirect } from "@/shared/components/molecules/FormationRedirect"
+import { DiscoverCard } from "@/shared/components/molecules/cards/DiscoverCard"
 
 interface NavbarNavigationProps
   extends React.HTMLAttributes<HTMLUListElement> {}
@@ -36,7 +37,7 @@ const NavbarListItem: React.FC<NavbarListItemProps> = ({
       <li
         onMouseEnter={hover.handleMouseEnter}
         onMouseLeave={hover.handleMouseLeave}
-        className="p-3 flex items-center flex-col transition-all cursor-pointer hover:bg-neutral/[0.20] rounded-lg"
+        className="p-3 flex items-center flex-col transition-all cursor-pointer hover:bg-neutral/[0.10] rounded-lg"
       >
         <span className="flex items-center">
           {item.title}
@@ -82,8 +83,10 @@ const NavbarDropdownContent: React.FC<NavbarDropdownContentProps> = ({
   function renderFreeContentDropdown() {
     if (item.dropdownContent?.card) {
       return (
-        <div>
-          <h2>Conteúdos gratuitos</h2>
+        <div className="max-w-[1256px] mx-auto">
+          <div className="flex items-center w-full">
+            <DiscoverCard card={item.dropdownContent.card} />
+          </div>
         </div>
       )
     }

@@ -13,7 +13,7 @@ export const FormationRedirect: React.FC<FormationRedirectProps> = ({
   formation,
 }: FormationRedirectProps) => {
   return (
-    <div className="flex relative hover:bg-neutral/[0.20] border border-transparent w-full col-span-1 rounded-lg hover:border-gray-600/[0.25] items-center p-4 justify-between">
+    <div className="flex relative hover:bg-neutral/[0.10] border border-transparent w-full col-span-1 rounded-lg hover:border-gray-600/[0.25] items-center p-4 justify-between">
       <div className="flex items-center gap-2">
         {formation.title === "Formação Full-Stack" ? (
           <Image
