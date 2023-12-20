@@ -11,7 +11,7 @@ export const BlackMonthAds: React.FC<BlackMonthAdsProps> = ({
 }: BlackMonthAdsProps) => {
   return (
     <Ads
-      className="bg-gradient-to-tr from-brand-primary to-brand-secondary"
+      className="bg-gradient-to-tr from-brand-primary to-brand-tertiary"
       {...props}
     >
       <Image src={blackMonth} alt="black_month/svg" />

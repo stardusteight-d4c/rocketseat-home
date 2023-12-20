@@ -35,7 +35,7 @@ export const FormationRedirect: React.FC<FormationRedirectProps> = ({
       </div>
       <div className="flex items-center gap-x-2">
         {formation.new && (
-          <p className="font-medium bg-gradient-to-tr from-brand-primary to-brand-secondary shadow-dark-mid py-1 px-2 tracking-tight uppercase rounded-lg border border-gray-600/[0.50]">
+          <p className="font-medium bg-brand-primary shadow-dark-mid py-1 px-2 tracking-tight uppercase rounded-lg border border-gray-600/[0.50]">
             Novo
           </p>
         )}
