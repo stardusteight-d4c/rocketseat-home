@@ -4,9 +4,7 @@ import { ArrowDown } from "@/shared/components/atoms/icons"
 
 import { useNavigation } from "./hooks/useNavigation"
 
-import { FormationRedirect } from "./components/FormationRedirect"
-import { DiscoverCard } from "./components/DiscoverCard"
-import { FreeContent } from "./components/FreeContent"
+import { DiscoverCard, FormationRedirect, FreeContent } from "./components"
 
 interface NavbarNavigationProps
   extends React.HTMLAttributes<HTMLUListElement> {}
