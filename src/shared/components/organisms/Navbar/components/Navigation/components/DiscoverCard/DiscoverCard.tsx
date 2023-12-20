@@ -28,7 +28,7 @@ export const DiscoverCard: React.FC<DiscoverCardProps> = ({
           height="40"
           alt="discover_logo/svg"
         />
-        <h3 className="font-bold text-xl">{card.title}</h3>
+        <h3 className="font-bold text-2xl">{card.title}</h3>
         <span>{card.subtitle}</span>
         <Button className="!w-fit hover:brightness-125 bg-black/70 text-white uppercase font-bold tracking-tight backdrop-blur-sm">
           {card.action.title}

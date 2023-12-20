@@ -11,6 +11,9 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
         alt="background_hero/svg"
         className="w-screen object-cover"
       />
+      <div className="absolute top-[80px] left-1/2 -translate-x-1/2">
+        
+      </div>
     </div>
   )
 }
