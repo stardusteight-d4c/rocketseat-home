@@ -6,6 +6,8 @@ export function HomeModule() {
       <Navbar.Root>
         <Navbar.Logo />
         <Navbar.Navigation />
+        <Navbar.Login />
+        <Navbar.Subscription />
       </Navbar.Root>
     </main>
   )

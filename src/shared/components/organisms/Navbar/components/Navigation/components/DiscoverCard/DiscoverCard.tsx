@@ -2,6 +2,7 @@ import Image from "next/image"
 
 import discoverLogo from "@/shared/assets/discover-light.svg"
 import { Button } from "@/shared/components/atoms/ui/Button"
+import { ArrowRight } from "@/shared/components/atoms/icons"
 
 interface DiscoverCardProps extends React.HTMLAttributes<HTMLDivElement> {
   card: {
@@ -29,11 +30,10 @@ export const DiscoverCard: React.FC<DiscoverCardProps> = ({
         />
         <h3 className="font-bold text-xl">{card.title}</h3>
         <span>{card.subtitle}</span>
-        <Button
-          title={card.action.title}
-          className="!w-fit bg-black/70 uppercase font-bold tracking-tight backdrop-blur-sm"
-          textHexColor="#FFFFFF"
-        />
+        <Button className="!w-fit hover:brightness-125 bg-black/70 text-white uppercase font-bold tracking-tight backdrop-blur-sm">
+          {card.action.title}
+          <ArrowRight />
+        </Button>
       </div>
     </div>
   )
