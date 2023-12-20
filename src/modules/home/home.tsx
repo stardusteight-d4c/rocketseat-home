@@ -1,6 +1,5 @@
 import { Navbar } from "@/shared/components/organisms/Navbar"
-import { Hero } from "./components/Hero"
-import { BlackMonthAds } from "@/shared/components/organisms/ads/BlackMonthAds/BlackMonthAds"
+import { Home } from "./components"
 
 export function HomeModule() {
   return (
@@ -11,8 +10,9 @@ export function HomeModule() {
         <Navbar.Login />
         <Navbar.Subscription />
       </Navbar.Root>
-      <BlackMonthAds />
-      <Hero />
+      <Home.Ads />
+      <Home.Hero />
+      <Home.Video />
     </main>
   )
 }
