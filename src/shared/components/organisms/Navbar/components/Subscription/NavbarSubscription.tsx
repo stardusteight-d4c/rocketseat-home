@@ -11,7 +11,7 @@ export const NavbarSubscription: React.FC<NavbarSubscriptionProps> = ({
 }: NavbarSubscriptionProps) => {
   return (
     <Button
-      className="!w-fit px-4 py-[10px] bg-transparent text-sm tracking-normal hover:bg-brand-primary border text-white !border-brand-primary uppercase font-bold backdrop-blur-sm"
+      className="!w-fit px-4 py-[10px] bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
       {...props}
     >
       <span className="text-white">Assinar Agora</span>
