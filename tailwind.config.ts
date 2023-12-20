@@ -12,6 +12,7 @@ const config: Config = {
         brand: {
           primary: "#A44CEC",
           secondary: "#4AA3CE",
+          tertiary: "#F75A68",
         },
         dark: {
           low: "#29292E",
