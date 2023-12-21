@@ -1,6 +1,6 @@
 import Image from "next/image"
-import heroBackground from "@/shared/assets/hero-background.svg"
-import whatsapp from "@/shared/assets/icons/whatsapp.svg"
+import heroBackground from "@/public/assets/hero-background.svg"
+import whatsapp from "@/public/assets/icons/whatsapp.svg"
 import { Button } from "@/shared/components/atoms/ui/Button"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 
@@ -8,11 +8,11 @@ interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
   return (
-    <div {...props} className="relative">
+    <div {...props} className="relative h-[800px] overflow-hidden">
       <Image
         src={heroBackground}
         alt="background_hero/svg"
-        className="w-screen object-cover"
+        className="w-screen object-cover h-[800px]"
       />
       <div className="absolute top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
         <div className="bg-black/60 backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
