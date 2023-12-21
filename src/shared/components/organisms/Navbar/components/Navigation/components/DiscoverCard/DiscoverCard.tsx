@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import discoverLogo from "@/shared/assets/discover-light.svg"
+import discoverLogo from "@/public/assets/discover-light.svg"
 import { Button } from "@/shared/components/atoms/ui/Button"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 

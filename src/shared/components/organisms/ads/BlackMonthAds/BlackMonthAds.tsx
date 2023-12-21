@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { Ads } from "@/shared/components/molecules/Ads"
-import blackMonth from "@/shared/assets/black-month.svg"
+import blackMonth from "@/public/assets/black-month.svg"
 
 interface BlackMonthAdsProps extends React.HTMLAttributes<HTMLDivElement> {}
 

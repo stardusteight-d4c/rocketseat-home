@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import person from "@/shared/assets/icons/person.svg"
+import person from "@/public/assets/icons/person.svg"
 import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface NavbarLoginProps extends React.HTMLAttributes<HTMLButtonElement> {}

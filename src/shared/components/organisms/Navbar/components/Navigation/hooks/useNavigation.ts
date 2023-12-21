@@ -1,9 +1,9 @@
-import javaEmblem from "@/shared/assets/emblems/java-emblem.svg"
-import fullstackEmblem from "@/shared/assets/emblems/fullstack-emblem.svg"
-import nodejsEmblem from "@/shared/assets/emblems/nodejs-emblem.svg"
-import aiEmblem from "@/shared/assets/emblems/ai-emblem.svg"
-import reactEmblem from "@/shared/assets/emblems/react-emblem.svg"
-import reactnativeEmblem from "@/shared/assets/emblems/reactnative-emblem.svg"
+import javaEmblem from "@/public/assets/emblems/java-emblem.svg"
+import fullstackEmblem from "@/public/assets/emblems/fullstack-emblem.svg"
+import nodejsEmblem from "@/public/assets/emblems/nodejs-emblem.svg"
+import aiEmblem from "@/public/assets/emblems/ai-emblem.svg"
+import reactEmblem from "@/public/assets/emblems/react-emblem.svg"
+import reactnativeEmblem from "@/public/assets/emblems/reactnative-emblem.svg"
 
 import { useState } from "react"
 
