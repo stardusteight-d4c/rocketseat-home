@@ -23,10 +23,15 @@ export const Formations: React.FC<FormationsProps> = ({
             DO ZERO AO AVANÇADO
           </span>
         </div>
-        <h3 className="text-white text-4xl font-bold leading-[40px] mt-5">
+        <h3 className="text-white text-4xl text-center font-bold leading-[40px] mt-5">
           Conheça nossas formações em programação
         </h3>
-        <div>
+        <div className="mt-10 grid grid-cols-3 gap-[34px]">
+          <FormationCard />
+          <FormationCard />
+          <FormationCard />
+          <FormationCard />
+          <FormationCard />
           <FormationCard />
         </div>
       </div>
