@@ -17,10 +17,11 @@ const config: Config = {
         dark: {
           low: "#29292E",
           mid: "#121214",
-          str: "#09090a",
+          str: "#09090A",
         },
-        new: {
-          light: "#FFCD1E",
+        system: {
+          success: "#04D361",
+          warning: "#FFCD1E",
         },
         neutral: "#C4C4CC",
       },

@@ -45,7 +45,7 @@ const NavbarListItem: React.FC<NavbarListItemProps> = ({
         </span>
         {item.dropdownContent && hover.isHover && (
           <div className="pt-[25px] mt-[35px] absolute left-1/2 -translate-x-1/2">
-            <div className="bg-dark-str z-[100] pt-8 border-b border-b-gray-600/[0.25] shadow-md px-5 pb-10 text-gray-200 w-screen">
+            <div className="bg-dark-str z-[100] pt-8 border-b border-b-gray-600/[0.25] shadow-md shadow-black/30 px-5 pb-10 text-gray-200 w-screen">
               <NavbarDropdownContent item={item} />
             </div>
           </div>

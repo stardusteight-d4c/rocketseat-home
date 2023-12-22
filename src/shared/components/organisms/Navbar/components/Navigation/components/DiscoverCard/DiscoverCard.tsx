@@ -20,7 +20,7 @@ export const DiscoverCard: React.FC<DiscoverCardProps> = ({
   ...props
 }: DiscoverCardProps) => {
   return (
-    <div className="p-6 w-full rounded-lg bg-[#4863F7] shadow-md text-white" {...props}>
+    <div className="p-6 w-full rounded-lg bg-[#4863F7] shadow-md shadow-black/30 text-white" {...props}>
       <div className="flex flex-col gap-y-4">
         <Image
           src={discoverLogo}
