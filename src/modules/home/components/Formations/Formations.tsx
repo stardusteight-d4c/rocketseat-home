@@ -1,3 +1,7 @@
+import Image from "next/image"
+
+import { FormationCard } from "./components/FormationCard"
+
 interface FormationsProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Formations: React.FC<FormationsProps> = ({
@@ -22,6 +26,9 @@ export const Formations: React.FC<FormationsProps> = ({
         <h3 className="text-white text-4xl font-bold leading-[40px] mt-5">
           Conheça nossas formações em programação
         </h3>
+        <div>
+          <FormationCard />
+        </div>
       </div>
     </div>
   )
