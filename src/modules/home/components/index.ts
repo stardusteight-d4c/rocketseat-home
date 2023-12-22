@@ -1,3 +1,4 @@
+import { Formations } from "./Formations"
 import { Hero } from "./Hero"
 import { Students } from "./Students"
 import { Video } from "./Video"
@@ -9,4 +10,5 @@ export const Home = {
   Ads: BlackMonthAds,
   Video: Video,
   Students: Students,
+  Formations: Formations,
 }

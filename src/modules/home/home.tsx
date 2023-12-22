@@ -3,7 +3,7 @@ import { Home } from "./components"
 
 export function HomeModule() {
   return (
-    <main className="w-screen overflow-x-hidden bg-dark-str">
+    <main className="bg-dark-str">
       <Navbar.Root>
         <Navbar.Logo />
         <Navbar.Navigation />
@@ -14,6 +14,7 @@ export function HomeModule() {
       <Home.Hero />
       <Home.Video />
       <Home.Students />
+      <Home.Formations />
     </main>
   )
 }

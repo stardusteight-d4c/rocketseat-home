@@ -11,7 +11,7 @@ export const Video: React.FC<VideoProps> = ({
   return (
     <div
       className={
-        "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary h-[458px] w-screen " +
+        "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary h-[458px] max-w-screen overflow-hidden " +
         className
       }
     >

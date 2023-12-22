@@ -14,11 +14,11 @@ export const Students: React.FC<StudentsProps> = ({
   return (
     <div
       className={
-        "bg-dark-str max-w-[1256px] mx-auto w-full py-20 flex items-center justify-center " + className
+        "bg-dark-str max-w-screen w-full py-20 flex items-center justify-center " + className
       }
       {...props}
     >
-      <div className="flex items-center gap-x-[254px]">
+      <div className="flex items-center justify-between max-w-[1256px] w-full">
         <div className="flex flex-col">
           <span className="text-neutral leading-[24px]">
             Empresas que contratam nosso alunos
