@@ -16,8 +16,8 @@ const config: Config = {
         },
         dark: {
           low: "#29292E",
-          mid: "#1E1E1E",
-          str: "#121214",
+          mid: "#121214",
+          str: "#09090a",
         },
         new: {
           light: "#FFCD1E",

@@ -13,6 +13,7 @@ export function HomeModule() {
       <Home.Ads />
       <Home.Hero />
       <Home.Video />
+      <Home.Students />
     </main>
   )
 }

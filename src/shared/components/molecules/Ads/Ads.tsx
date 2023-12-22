@@ -9,7 +9,9 @@ export const Ads: React.FC<AdsProps> = ({
 }: AdsProps) => {
   return (
     <div
-      className={`flex items-center text-white justify-center py-4 ${className}`}
+      className={
+        "flex items-center text-white justify-center py-4 " + className
+      }
       {...props}
     >
       {children}

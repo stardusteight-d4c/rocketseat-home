@@ -19,7 +19,10 @@ export const Button: React.FC<ButtonProps> = ({
   if (type === "common") {
     return (
       <button
-        className={`px-6 py-[14px] flex w-full rounded-lg transition-all gap-x-1 items-center justify-center cursor-pointer border-1 border-transparent ${className}`}
+        className={
+          "px-6 py-[14px] flex w-full rounded-lg transition-all gap-x-1 items-center justify-center cursor-pointer border-1 border-transparent " +
+          className
+        }
         {...props}
       >
         {children && children.length > 0 ? (
@@ -33,7 +36,11 @@ export const Button: React.FC<ButtonProps> = ({
 
   if (type === "play") {
     return (
-      <div className={`flex items-center flex-col w-fit gap-y-2 h-fit ${className}`}>
+      <div
+        className={
+          "flex items-center flex-col w-fit gap-y-2 h-fit " + className
+        }
+      >
         <button className="rounded-full py-7 pl-[30px] pr-[26px] bg-white/10 flex items-center justify-center">
           <Image src={play} alt="play/svg" />
         </button>

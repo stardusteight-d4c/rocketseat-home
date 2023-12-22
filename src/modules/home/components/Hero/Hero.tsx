@@ -15,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
         className="w-screen object-cover h-[800px]"
       />
       <div className="absolute top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
-        <div className="bg-black/60 backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
+        <div className="bg-dark-str backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
           <span className="font-bold uppercase bg-gradient-to-br text-transparent from-white via-white/50 to-transparent bg-clip-text">
             HELLO WORLD_
           </span>
@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
           ritmo, se tornar Full Stack e se especializar em diversas tecnologias.
         </span>
         <div>
-          <div className="bg-black/60 mt-7 flex items-center backdrop-blur-sm rounded-lg p-6 border border-gray-600/[0.50] w-fit mx-auto">
+          <div className="bg-dark-str mt-7 flex items-center backdrop-blur-sm rounded-lg p-6 border border-gray-600/[0.50] w-fit mx-auto">
             <Button className="!w-fit !py-4 text-sm hover:brightness-110 tracking-normal border text-white !border-brand-primary bg-brand-primary uppercase font-bold backdrop-blur-sm">
               <span className="text-white uppercase">Quero assinar agora</span>
               <ArrowRight className="-mb-[3px]" />
