@@ -1,8 +1,8 @@
 import Image from "next/image"
+
 import rocket from "@/public/assets/rocket.png"
-import ia from "@/public/assets/ia.svg"
 import vector from "@/public/assets/vector.svg"
-import dani from "@/public/assets/dani.webp"
+
 import { Button } from "@/shared/components/atoms/ui/Button"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 
@@ -40,7 +40,7 @@ export const FormationCard: React.FC<FormationCardProps> = ({
               </span>
             </div>
           )}
-          <div className="absolute top-0 right-0">
+          <div className="absolute -top-[1px] -right-[1px]">
             <div className="relative">
               <Image src={vector} alt="vector/gif" />
               <div className="absolute top-1/2 -translate-y-1/2 left-[26px] flex items-center gap-x-[6px]">

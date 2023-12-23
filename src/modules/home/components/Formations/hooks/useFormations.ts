@@ -11,6 +11,11 @@ import maykRodrigo from "@/public/assets/educators/mayk-rodrigo.webp"
 import diego from "@/public/assets/educators/diego.webp"
 import rodrigo from "@/public/assets/educators/rodrigo.webp"
 
+import star from "@/public/assets/icons/star.svg"
+import video from "@/public/assets/icons/video.svg"
+import clock from "@/public/assets/icons/clock.svg"
+import computer from "@/public/assets/icons/computer.svg"
+
 export function useFormations() {
   const formationsData: FormationsData[] = [
     {
@@ -69,7 +74,31 @@ export function useFormations() {
     },
   ]
 
+  const infoData: InfoData[] = [
+    {
+      image: star.src,
+      title: "Nota 4.9 de 5",
+      description: `Quem faz aprova! Essa é a média de avaliação das nossas aulas na plataforma.`,
+    },
+    {
+      image: video.src,
+      title: "+1.000 aulas",
+      description: `Acesso imediato a todo conteúdo disponível na plataforma para assistir no seu ritmo. Com atualizações inclusas na assinatura.`,
+    },
+    {
+      image: clock.src,
+      title: "+400h de conteúdo",
+      description: `Além das aulas gravadas você tem acesso a benefícios para assinantes: mentorias, masterclass ao vivo e eventos exclusivos para alunos.`,
+    },
+    {
+      image: computer.src,
+      title: "+74 projetos práticos",
+      description: `Você vai aprender na prática com diversos projetos e cases reais pra evoluir o seu portfólio, além de colecionar certificados para o seu currículo.`,
+    },
+  ]
+
   return {
     formationsData,
+    infoData
   }
 }

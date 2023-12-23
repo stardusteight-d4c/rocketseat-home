@@ -1,4 +1,5 @@
 import { FormationCard } from "./components/FormationCard"
+import { Info } from "./components/Info"
 import { useFormations } from "./hooks/useFormations"
 
 interface FormationsProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -7,7 +8,7 @@ export const Formations: React.FC<FormationsProps> = ({
   className,
   ...props
 }: FormationsProps) => {
-  const {formationsData} = useFormations()
+  const { formationsData, infoData } = useFormations()
 
   return (
     <div
@@ -31,6 +32,14 @@ export const Formations: React.FC<FormationsProps> = ({
           {formationsData.map((item, index) => (
             <FormationCard key={index} data={item} />
           ))}
+        </div>
+        <div className="max-w-[1230px] w-full">
+          <div className="border-t h-[0px] w-full border-t-gray-600/[0.50] my-10" />
+          <div className="grid grid-cols-4 gap-x-7 items-start">
+            {infoData.map((item, index) => (
+              <Info key={index} data={item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -7,3 +7,9 @@ interface FormationsData {
   launching: boolean
   level: number
 }
+
+interface InfoData {
+  image: string
+  title: string
+  description: string
+}
