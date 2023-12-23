@@ -47,7 +47,7 @@ export const FormationCard: React.FC<FormationCardProps> = ({
                 {Array.from({ length: data.level }).map(() => (
                   <div className="w-[10px] h-[10px] rounded-sm bg-system-success" />
                 ))}
-                {Array.from({ length: data.level - 5 }).map(() => (
+                {Array.from({ length: 5 - data.level  }).map(() => (
                   <div className="w-[10px] h-[10px] rounded-sm bg-dark-low" />
                 ))}
               </div>
