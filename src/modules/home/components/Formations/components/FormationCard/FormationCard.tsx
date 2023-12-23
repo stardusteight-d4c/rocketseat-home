@@ -44,11 +44,17 @@ export const FormationCard: React.FC<FormationCardProps> = ({
             <div className="relative">
               <Image src={vector} alt="vector/gif" />
               <div className="absolute top-1/2 -translate-y-1/2 left-[26px] flex items-center gap-x-[6px]">
-                {Array.from({ length: data.level }).map(() => (
-                  <div className="w-[10px] h-[10px] rounded-sm bg-system-success" />
+                {Array.from({ length: data.level }).map((_, index) => (
+                  <div
+                    key={index}
+                    className="w-[10px] h-[10px] rounded-sm bg-system-success"
+                  />
                 ))}
-                {Array.from({ length: 5 - data.level  }).map(() => (
-                  <div className="w-[10px] h-[10px] rounded-sm bg-dark-low" />
+                {Array.from({ length: 5 - data.level }).map((_, index) => (
+                  <div
+                    key={index}
+                    className="w-[10px] h-[10px] rounded-sm bg-dark-low"
+                  />
                 ))}
               </div>
             </div>
