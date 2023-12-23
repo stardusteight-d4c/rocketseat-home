@@ -1,6 +1,5 @@
-import Image from "next/image"
-
 import { FormationCard } from "./components/FormationCard"
+import { useFormations } from "./hooks/useFormations"
 
 interface FormationsProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -8,6 +7,8 @@ export const Formations: React.FC<FormationsProps> = ({
   className,
   ...props
 }: FormationsProps) => {
+  const {formationsData} = useFormations()
+
   return (
     <div
       className={
@@ -27,12 +28,9 @@ export const Formations: React.FC<FormationsProps> = ({
           Conheça nossas formações em programação
         </h3>
         <div className="mt-10 grid grid-cols-3 gap-[34px]">
-          <FormationCard />
-          <FormationCard />
-          <FormationCard />
-          <FormationCard />
-          <FormationCard />
-          <FormationCard />
+          {formationsData.map((item, index) => (
+            <FormationCard key={index} data={item} />
+          ))}
         </div>
       </div>
     </div>
