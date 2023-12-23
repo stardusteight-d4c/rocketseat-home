@@ -1,3 +1,4 @@
+import { DiscoverCTA } from "./components/DiscoverCTA"
 import { FormationCard } from "./components/FormationCard"
 import { Info } from "./components/Info"
 import { useFormations } from "./hooks/useFormations"
@@ -40,6 +41,7 @@ export const Formations: React.FC<FormationsProps> = ({
               <Info key={index} data={item} />
             ))}
           </div>
+          <DiscoverCTA />
         </div>
       </div>
     </div>
