@@ -11,14 +11,15 @@ export const Video: React.FC<VideoProps> = ({
   return (
     <div
       className={
-        "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary h-[458px] max-w-screen overflow-hidden " +
+        "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary h-[458px] max-w-[100vw] overflow-hidden " +
         className
       }
+      {...props}
     >
-      <div className="absolute -mt-56 z-[50] left-1/2 border-[10px] w-[1216px] overflow-hidden h-[682px] -translate-x-1/2 border-b-0 border-dark-str rounded-b-none rounded-lg  mx-auto">
+      <div className="absolute -mt-56 z-[50] left-1/2 border-[10px] max-w-[1230px] w-full overflow-hidden h-[682px] -translate-x-1/2 border-b-0 border-dark-str rounded-b-none rounded-lg  mx-auto">
         <div className="relative">
           <Image
-            width={1216}
+            width={1230}
             height={684}
             src={rocketShowcase}
             alt="rocket_showcase"
