@@ -4,6 +4,7 @@ import workGroup from "@/public/assets/work-group.png"
 
 import { Purpose } from "./components/Purpose"
 import { useTarget } from "./hooks/useTarget"
+import { TargetCheck } from "./components/TargetCheck/TargetCheck"
 
 interface TargetProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -11,7 +12,7 @@ export const Target: React.FC<TargetProps> = ({
   className,
   ...props
 }: TargetProps) => {
-  const { purposeData } = useTarget()
+  const { purposeData, targetData } = useTarget()
 
   return (
     <div
@@ -22,7 +23,7 @@ export const Target: React.FC<TargetProps> = ({
       {...props}
     >
       <div className="h-[80px] bg-gradient-to-t from-dark-str to-dark-mid absolute inset-x-0 -top-[70px]" />
-      <div className="bg-dark-mid max-w-[1230px] w-full rounded-lg p-[60px] border border-gray-600/[0.50]">
+      <div className="bg-dark-mid max-w-[1230px] w-full flex flex-col rounded-lg p-[60px] border border-gray-600/[0.50]">
         <div className="bg-dark-str backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
           <span className="font-bold uppercase bg-gradient-to-br text-transparent from-white via-white/50 to-transparent bg-clip-text">
             PARA QUEM É?
@@ -50,6 +51,20 @@ export const Target: React.FC<TargetProps> = ({
             alt="work_group/png"
             className="w-[533px] h-[419px] object-cover"
           />
+        </div>
+        <div className="w-full h-[42px] mt-[60px] mb-8 relative">
+          <div className="border-t z-10 h-[0px] inset-x-0 absolute top-1/2 -translate-y-1/2 w-full border-t-gray-600/[0.50] mb-7" />
+          <div className="absolute bg-dark-mid h-4 w-[260px] z-20 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2" />
+          <div className="bg-dark-str z-30 absolute backdrop-blur-sm top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
+            <span className="font-bold uppercase bg-gradient-to-br text-transparent from-white via-white/50 to-transparent bg-clip-text">
+              TAMBÉM É PARA QUEM
+            </span>
+          </div>
+        </div>
+        <div className="grid grid-cols-4">
+          {targetData.map((item, index) => (
+            <TargetCheck key={index} target={item} />
+          ))}
         </div>
       </div>
     </div>

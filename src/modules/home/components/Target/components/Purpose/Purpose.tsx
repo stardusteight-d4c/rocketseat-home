@@ -12,8 +12,8 @@ export const Purpose: React.FC<PurposeProps> = ({
   ...props
 }: PurposeProps) => {
   return (
-    <div>
-      <div className={"flex flex-col gap-y-3 " + className} {...props}>
+    <div className={className} {...props}>
+      <div className="flex flex-col gap-y-3">
         <h3 className="text-white text-2xl font-bold leading-[32px]">
           {data.title}
         </h3>
