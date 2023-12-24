@@ -33,7 +33,7 @@ export const FormationCard: React.FC<FormationCardProps> = ({
             className="w-[334px] h-[139.16px] rounded-sm"
           />
           {data.launching && (
-            <div className="flex items-center gap-x-[4px] px-2 py-1 top-0 left-0 absolute bg-gradient-to-tr from-[#20a07a] via-[#5853b8] to-[#9d3eb5] rounded-br-md rounded-tl-md shadow-md shadow-black/30">
+            <div className="flex items-center gap-x-[4px] px-2 py-1 top-0 left-0 absolute bg-gradient-to-tr from-[#20a07a] via-[#5853b8] to-[#9d3eb5] rounded-br-md rounded-tl-sm shadow-md shadow-black/30">
               <Image src={rocket} alt="rocket/png" className="w-[16px]" />
               <span className="font-bold text-xs text-white tracking-wide">
                 LANÇAMENTO

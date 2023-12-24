@@ -1,6 +1,8 @@
 import { DiscoverCTA } from "./components/DiscoverCTA"
 import { FormationCard } from "./components/FormationCard"
+
 import { Info } from "./components/Info"
+
 import { useFormations } from "./hooks/useFormations"
 
 interface FormationsProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -14,7 +16,7 @@ export const Formations: React.FC<FormationsProps> = ({
   return (
     <div
       className={
-        "bg-dark-mid relative py-20 max-w-screen w-full flex items-center justify-center " +
+        "bg-dark-mid relative py-20 max-w-[100vw] w-full flex items-center justify-center " +
         className
       }
       {...props}
