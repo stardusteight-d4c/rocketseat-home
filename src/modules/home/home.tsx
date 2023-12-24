@@ -15,6 +15,7 @@ export function HomeModule() {
       <Home.Video />
       <Home.Students />
       <Home.Formations />
+      <Home.Target />
     </main>
   )
 }

@@ -14,7 +14,7 @@ export const Students: React.FC<StudentsProps> = ({
   return (
     <div
       className={
-        "bg-dark-str max-w-screen w-full py-20 flex items-center justify-center " + className
+        "bg-dark-str max-w-[100vw] w-full py-20 flex items-center justify-center " + className
       }
       {...props}
     >
