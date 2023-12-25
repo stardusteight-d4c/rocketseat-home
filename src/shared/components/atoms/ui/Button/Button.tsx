@@ -4,7 +4,8 @@ import play from "@/public/assets/icons/play.svg"
 
 interface ButtonProps
   extends Omit<React.HTMLAttributes<HTMLButtonElement>, "title"> {
-  children?: React.ReactNode[]
+  children?: React.ReactNode
+  asChild?: Boolean
   title?: string
   type?: "common" | "play"
 }
@@ -25,7 +26,7 @@ export const Button: React.FC<ButtonProps> = ({
         }
         {...props}
       >
-        {children && children.length > 0 ? (
+        {children ? (
           <>{children}</>
         ) : (
           <span>{title}</span>
