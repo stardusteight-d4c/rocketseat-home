@@ -1,0 +1,35 @@
+import solutionBackground from "@/public/assets/content-section-bg.webp"
+import Image from "next/image"
+
+interface SolutionProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+export const Solution: React.FC<SolutionProps> = ({
+  className,
+  ...props
+}: SolutionProps) => {
+  return (
+    <div className={"bg-dark-str relative " + className} {...props}>
+      <Image
+        src={solutionBackground}
+        alt="solution_background/png"
+        quality={100}
+        className="w-screen h-[70vh] border-t border-t-gray-600/[0.50]"
+      />
+
+      <div className="absolute top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
+        <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
+          <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
+            SOLUÇÃO COMPLETA_
+          </span>
+        </div>
+        <h2 className="text-4xl font-medium text-center mx-auto leading-[40px] max-w-[612px] mt-6 w-full text-white">
+          Chega de comprar cursos! Aqui você encontra tudo que precisa pra
+          crescer na carreira em programação
+        </h2>
+        <span className="text-neutral text-xl max-w-[630px] w-full block mt-6 text-center mx-auto leading-[28px]">
+          Veja todos os benefícios exclusivos para assinantes da Rocketseat
+        </span>
+      </div>
+    </div>
+  )
+}

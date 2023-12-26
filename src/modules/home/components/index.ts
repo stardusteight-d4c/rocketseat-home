@@ -1,5 +1,6 @@
 import { Formations } from "./Formations"
 import { Hero } from "./Hero"
+import { Solution } from "./Solution"
 import { Students } from "./Students"
 import { Target } from "./Target"
 import { Video } from "./Video"
@@ -13,4 +14,5 @@ export const Home = {
   Students: Students,
   Formations: Formations,
   Target: Target,
+  Solution: Solution,
 }

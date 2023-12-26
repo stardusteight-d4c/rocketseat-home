@@ -16,6 +16,7 @@ export function HomeModule() {
       <Home.Students />
       <Home.Formations />
       <Home.Target />
+      <Home.Solution />
     </main>
   )
 }
