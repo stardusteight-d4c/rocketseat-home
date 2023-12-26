@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
       />
       <div className="absolute top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
         <div className="bg-dark-str backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
-          <span className="font-bold uppercase bg-gradient-to-br text-transparent from-white via-white/50 to-transparent bg-clip-text">
+          <span className="font-bold uppercase bg-gradient-to-r bg-clip-textbg-gradient-to-r text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             HELLO WORLD_
           </span>
         </div>

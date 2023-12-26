@@ -16,7 +16,7 @@ export const Video: React.FC<VideoProps> = ({
       }
       {...props}
     >
-      <div className="absolute -mt-56 z-[50] left-1/2 border-[10px] max-w-[1230px] w-full overflow-hidden h-[682px] -translate-x-1/2 border-b-0 border-dark-str rounded-b-none rounded-lg  mx-auto">
+      <div className="absolute -mt-[214px] z-[50] left-1/2 border-[10px] max-w-[1230px] w-full overflow-hidden h-[682px] -translate-x-1/2 border-dark-str rounded-b-none rounded-lg  mx-auto">
         <div className="relative">
           <Image
             width={1230}

@@ -21,10 +21,10 @@ export const Formations: React.FC<FormationsProps> = ({
       }
       {...props}
     >
-      <div className="h-[80px] bg-gradient-to-b from-dark-str to-dark-mid absolute inset-x-0 -top-[70px]" />
+      <div className="h-[80px] bg-gradient-to-b from-dark-str to-dark-mid absolute inset-x-0 -top-[50px]" />
       <div>
         <div className="bg-dark-str backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
-          <span className="font-bold uppercase bg-gradient-to-br text-transparent from-white via-white/50 to-transparent bg-clip-text">
+        <span className="font-bold uppercase bg-gradient-to-r bg-clip-textbg-gradient-to-r text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             DO ZERO AO AVANÇADO
           </span>
         </div>
