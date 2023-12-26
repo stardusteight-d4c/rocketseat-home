@@ -27,9 +27,9 @@ export const Target: React.FC<TargetProps> = ({
       <div className="h-[80px] bg-gradient-to-t from-dark-str to-dark-mid absolute inset-x-0 -top-[50px]" />
 
       <div className="bg-dark-mid max-w-[1230px] w-full flex flex-col rounded-lg p-[60px] border border-gray-600/[0.50]">
-        <div className="bg-dark-str backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
-          <span className="font-bold uppercase bg-gradient-to-r bg-clip-textbg-gradient-to-r text-transparent from-brand-primary to-brand-secondary bg-clip-text">
-            PARA QUEM É?
+        <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
+          <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
+            PARA QUEM É?_
           </span>
         </div>
         <h3 className="text-white text-4xl mb-[60px] text-center font-bold leading-[40px] mt-5">
@@ -58,9 +58,9 @@ export const Target: React.FC<TargetProps> = ({
         <div className="w-full h-[42px] mt-[60px] mb-8 relative">
           <div className="border-t z-10 h-[0px] inset-x-0 absolute top-1/2 -translate-y-1/2 w-full border-t-gray-600/[0.50] mb-7" />
           <div className="absolute bg-dark-mid h-4 w-[260px] z-20 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2" />
-          <div className="bg-dark-str z-30 absolute backdrop-blur-sm top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
-            <span className="font-bold uppercase bg-gradient-to-r bg-clip-textbg-gradient-to-r text-transparent from-brand-primary to-brand-secondary bg-clip-text">
-              TAMBÉM É PARA QUEM
+          <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 z-30 absolute backdrop-blur-sm top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 rounded-lg p-2 w-fit mx-auto">
+            <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
+              TAMBÉM É PARA QUEM_
             </span>
           </div>
         </div>
@@ -70,7 +70,7 @@ export const Target: React.FC<TargetProps> = ({
           ))}
         </div>
       </div>
-      <div className="bg-gradient-to-tr max-w-[1230px] w-full mt-20 from-[#20a07a] via-[#5853b8] to-[#9d3eb5] rounded-lg flex justify-between p-10">
+      <div className="bg-gradient-to-tr from-brand-primary via-brand-primary to-brand-secondary max-w-[1230px] w-full mt-20 rounded-lg flex justify-between p-10">
         <h2 className="font-bold max-w-[378px] tracking-wide w-full text-2xl leading-[36px] text-white">
           Transforme sua carreira em programação na Rocketseat
         </h2>

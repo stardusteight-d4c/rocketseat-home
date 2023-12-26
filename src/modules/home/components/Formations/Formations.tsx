@@ -23,9 +23,9 @@ export const Formations: React.FC<FormationsProps> = ({
     >
       <div className="h-[80px] bg-gradient-to-b from-dark-str to-dark-mid absolute inset-x-0 -top-[50px]" />
       <div>
-        <div className="bg-dark-str backdrop-blur-sm rounded-lg p-2 border border-gray-600/[0.50] w-fit mx-auto">
-        <span className="font-bold uppercase bg-gradient-to-r bg-clip-textbg-gradient-to-r text-transparent from-brand-primary to-brand-secondary bg-clip-text">
-            DO ZERO AO AVANÇADO
+        <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
+          <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
+            DO ZERO AO AVANÇADO_
           </span>
         </div>
         <h3 className="text-white text-4xl text-center font-bold leading-[40px] mt-5">
