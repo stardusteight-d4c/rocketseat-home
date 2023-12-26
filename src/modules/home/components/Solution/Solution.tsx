@@ -36,7 +36,7 @@ export const Solution: React.FC<SolutionProps> = ({
         </span>
         <Image src={arrowDown} alt="arrow_down/svg" className="mx-auto mt-6" />
       </div>
-      <div className="space-y-[160px] relative z-30 pt-[555px]">
+      <div className="space-y-[160px] relative z-30 pt-[555px] pb-20">
         {solutionCardData.map((item, index) => (
           <SolutionCard key={index} data={item} index={index} />
         ))}

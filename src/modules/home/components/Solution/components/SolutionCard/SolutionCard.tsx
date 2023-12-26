@@ -16,8 +16,9 @@ export const SolutionCard: React.FC<SolutionCardProps> = ({
   return (
     <div
       className={
-        `items-center flex gap-x-10 max-w-[1230px] w-full mx-auto justify-between ${!isEven && 'flex-row-reverse '}` +
-        className
+        `items-center flex gap-x-10 max-w-[1230px] w-full mx-auto justify-between ${
+          !isEven && "flex-row-reverse "
+        }` + className
       }
       {...props}
     >
@@ -27,7 +28,9 @@ export const SolutionCard: React.FC<SolutionCardProps> = ({
             {data.label}
           </span>
         </div>
-        <h3 className="text-white font-bold text-3xl leading-[36px] my-6">{data.title}</h3>
+        <h3 className="text-white font-bold text-3xl leading-[36px] my-6">
+          {data.title}
+        </h3>
         <span className="text-neutral leading-[24px]">{data.description}</span>
         {data.children && (
           <>
@@ -36,14 +39,13 @@ export const SolutionCard: React.FC<SolutionCardProps> = ({
           </>
         )}
       </div>
-      <Image
-        src={data.image}
-        width={588}
-        height={397}
-        quality={100}
-        alt={`${data.label.toLocaleLowerCase().replaceAll(" ", "_")}/webp`}
-        className="w-[588px] h-[397px]"
-      />
+      <div className="border relative border-gray-600/[0.50] overflow-hidden rounded-lg min-w-[588px] max-w-[588px] min-h-[397px] max-h-[397px]">
+        <img
+          src={data.image}
+          alt={`${data.label.toLocaleLowerCase().replaceAll(" ", "_")}/webp`}
+          className="w-[590px] h-[400px] -mt-[2px]"
+        />
+      </div>
     </div>
   )
 }
