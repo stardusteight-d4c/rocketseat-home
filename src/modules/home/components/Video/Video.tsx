@@ -9,7 +9,7 @@ export const Video: React.FC<VideoProps> = ({
   ...props
 }: VideoProps) => {
   return (
-    <div
+    <section
       className={
         "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary h-[458px] max-w-[100vw] overflow-hidden " +
         className
@@ -32,6 +32,6 @@ export const Video: React.FC<VideoProps> = ({
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

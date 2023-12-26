@@ -14,7 +14,7 @@ export const Formations: React.FC<FormationsProps> = ({
   const { formationsData, infoData } = useFormations()
 
   return (
-    <div
+    <section
       className={
         "bg-dark-mid relative py-20 max-w-[100vw] w-full flex items-center justify-center " +
         className
@@ -46,6 +46,6 @@ export const Formations: React.FC<FormationsProps> = ({
           <DiscoverCTA />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -12,9 +12,10 @@ export const Students: React.FC<StudentsProps> = ({
   const { companies } = useStudents()
 
   return (
-    <div
+    <section
       className={
-        "bg-dark-str max-w-[100vw] w-full py-20 flex items-center justify-center " + className
+        "bg-dark-str max-w-[100vw] w-full py-20 flex items-center justify-center " +
+        className
       }
       {...props}
     >
@@ -46,6 +47,6 @@ export const Students: React.FC<StudentsProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

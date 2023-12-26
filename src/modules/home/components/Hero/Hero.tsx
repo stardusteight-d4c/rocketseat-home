@@ -8,7 +8,7 @@ interface HeroProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
   return (
-    <div {...props} className="relative h-[800px] overflow-hidden">
+    <section {...props} className="relative h-[800px] overflow-hidden">
       <Image
         src={heroBackground}
         alt="background_hero/svg"
@@ -40,13 +40,17 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
             <div className="flex items-center group cursor-pointer gap-x-2 text-white uppercase font-bold">
               <Image src={whatsapp} alt="whatsapp/svg" />
               <div className="flex flex-col gap-y-[2px]">
-                <span className="block text-[10px] group-hover:underline">Tem alguma dúvida?</span>
-                <span className="block text-sm group-hover:underline">fale com nosso time</span>
+                <span className="block text-[10px] group-hover:underline">
+                  Tem alguma dúvida?
+                </span>
+                <span className="block text-sm group-hover:underline">
+                  fale com nosso time
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

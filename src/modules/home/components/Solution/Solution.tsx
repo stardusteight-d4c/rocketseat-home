@@ -2,8 +2,9 @@ import Image from "next/image"
 
 import solutionBackground from "@/public/assets/content-section-bg.webp"
 import arrowDown from "@/public/assets/icons/arrow-down.svg"
+
+import { SolutionCard } from "./components/SolutionCard"
 import { useSolution } from "./hooks"
-import { SolutionCard } from "./components/SolutionCard/SolutionCard"
 
 interface SolutionProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -14,7 +15,7 @@ export const Solution: React.FC<SolutionProps> = ({
   const { solutionCardData } = useSolution()
 
   return (
-    <div className={"bg-dark-str relative " + className} {...props}>
+    <section className={"bg-dark-str relative " + className} {...props}>
       <Image
         src={solutionBackground}
         alt="solution_background/png"
@@ -41,6 +42,6 @@ export const Solution: React.FC<SolutionProps> = ({
           <SolutionCard key={index} data={item} index={index} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

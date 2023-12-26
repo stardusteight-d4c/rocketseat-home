@@ -3,10 +3,11 @@ import Image from "next/image"
 import workGroup from "@/public/assets/work-group.png"
 import arrowRight from "@/public/assets/icons/arrow-right.svg"
 
+import { Button } from "@/shared/components/atoms/ui/Button"
+
 import { Purpose } from "./components/Purpose"
 import { useTarget } from "./hooks/useTarget"
 import { TargetCheck } from "./components/TargetCheck/TargetCheck"
-import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface TargetProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -17,7 +18,7 @@ export const Target: React.FC<TargetProps> = ({
   const { purposeData, targetData } = useTarget()
 
   return (
-    <div
+    <section
       className={
         "bg-dark-str flex-col relative max-w-[100vw] py-20 flex items-center justify-center  " +
         className
@@ -81,6 +82,6 @@ export const Target: React.FC<TargetProps> = ({
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

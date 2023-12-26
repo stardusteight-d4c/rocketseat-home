@@ -3,7 +3,7 @@ import { Home } from "./components"
 
 export function HomeModule() {
   return (
-    <main className="bg-dark-str">
+    <main>
       <Navbar.Root>
         <Navbar.Logo />
         <Navbar.Navigation />
@@ -17,6 +17,7 @@ export function HomeModule() {
       <Home.Formations />
       <Home.Target />
       <Home.Solution />
+      <Home.Feedbacks />
     </main>
   )
 }
