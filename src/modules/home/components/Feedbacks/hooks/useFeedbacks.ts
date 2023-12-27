@@ -25,7 +25,7 @@ export function useFeedbacks() {
       type: "video",
       author: "Laura Beatris",
       role: "Software Engineer na WorkOS",
-      feedback: "https://www.youtube.com/watch?v=td3zWqOuSpo",
+      feedback: "https://www.youtube.com/embed/td3zWqOuSpo",
       thumb: lauraThumb.src,
     },
     {
@@ -39,7 +39,7 @@ export function useFeedbacks() {
       type: "video",
       author: "Camila Sbrussi",
       role: "Software Engineer - Mercado Livre",
-      feedback: "https://www.youtube.com/watch?v=QuWxxKnNPFM",
+      feedback: "https://www.youtube.com/embed/QuWxxKnNPFM",
       thumb: camilaThumb.src,
     },
     {
@@ -77,7 +77,7 @@ export function useFeedbacks() {
       type: "video",
       author: "Isaac Viana",
       role: "Front-end Developer - Contractor",
-      feedback: "https://www.youtube.com/watch?v=XOXvILJsQ7Q",
+      feedback: "https://www.youtube.com/embed/XOXvILJsQ7Q",
       thumb: isaacThumb.src,
     },
     {
@@ -98,7 +98,7 @@ export function useFeedbacks() {
       type: "video",
       author: "Hélio Fresta",
       role: "Aluno da Rocketseat",
-      feedback: "https://www.youtube.com/watch?v=AegF22Z1peg",
+      feedback: "https://www.youtube.com/embed/AegF22Z1peg",
       thumb: helioThumb.src,
     },
     {
@@ -143,7 +143,7 @@ export function useFeedbacks() {
       type: "video",
       author: "Madalena Machado Rocha",
       role: "Aluna da Rocketseat",
-      feedback: "https://www.youtube.com/watch?v=htZPDNo13mE",
+      feedback: "https://www.youtube.com/embed/htZPDNo13mE",
       thumb: madalenaThumb.src,
     },
     {
@@ -157,7 +157,7 @@ export function useFeedbacks() {
       type: "video",
       author: "Lucas Exposito Rocha",
       role: "Aluno da Rocketseat",
-      feedback: "https://www.youtube.com/watch?v=RdMyr9bx2g0",
+      feedback: "https://www.youtube.com/embed/RdMyr9bx2g0",
       thumb: lucasThumb.src,
     },
   ]

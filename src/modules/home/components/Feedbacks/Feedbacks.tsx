@@ -78,7 +78,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
               </Button>
             </div>
           )}
-           {sliceValue === 6 && (
+          {sliceValue === 6 && (
             <div>
               <Button
                 onClick={() => setSliceValue(3)}

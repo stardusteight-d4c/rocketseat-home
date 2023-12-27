@@ -1,6 +1,10 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
 
 import play from "@/public/assets/icons/play-purple.svg"
+import { PlayerModal } from "@/shared/components/molecules/PlayerModal"
 
 interface FeedbackProps extends React.HTMLAttributes<HTMLDivElement> {
   data: FeedbackData
@@ -11,6 +15,8 @@ export const Feedback: React.FC<FeedbackProps> = ({
   className,
   ...props
 }: FeedbackProps) => {
+  const [openModal, setOpenModal] = useState(false)
+
   function renderTextFeedback() {
     if (data.type === "text") {
       return (
@@ -40,24 +46,34 @@ export const Feedback: React.FC<FeedbackProps> = ({
   function renderVideoFeedback() {
     if (data.type === "video") {
       return (
-        <div className="rounded-lg relative w-full max-w-[382px] h-[200px] border border-gray-600/[0.50]">
-          <img
-            src={data.thumb!}
-            alt={`${data.author.toLocaleLowerCase().replaceAll(" ", "_")}/webp`}
-            className="w-full h-full rounded-lg"
-          />
-          <div className="absolute z-10 left-4 bottom-5 flex flex-col gap-y-[6px]">
-            <h4 className="font-bold leading-[20px] text-neutral text-sm">
-              {data.author}
-            </h4>
-            <span className="text-[#8D8D99] uppercase font-medium text-xs leading-[16px]">
-              {data.role}
-            </span>
+        <>
+          <div className="rounded-lg relative w-full max-w-[382px] h-[200px] border border-gray-600/[0.50]">
+            <img
+              src={data.thumb!}
+              alt={`${data.author
+                .toLocaleLowerCase()
+                .replaceAll(" ", "_")}/webp`}
+              className="w-full h-full rounded-lg"
+            />
+            <div className="absolute z-10 left-4 bottom-5 flex flex-col gap-y-[6px]">
+              <h4 className="font-bold leading-[20px] text-neutral text-sm">
+                {data.author}
+              </h4>
+              <span className="text-[#8D8D99] uppercase font-medium text-xs leading-[16px]">
+                {data.role}
+              </span>
+            </div>
+            <button
+              onClick={() => setOpenModal(true)}
+              className="rounded-full w-[45px] h-[45px] absolute z-10 right-4 bottom-5 bg-white flex items-center justify-center"
+            >
+              <Image src={play} alt="play/svg" className="-mr-[4px]" />
+            </button>
           </div>
-          <button className="rounded-full w-[45px] h-[45px] absolute z-10 right-4 bottom-5 bg-white flex items-center justify-center">
-            <Image src={play} alt="play/svg" className="-mr-[4px]" />
-          </button>
-        </div>
+          {openModal && (
+            <PlayerModal baseUrl={data.feedback} setShowPlayer={setOpenModal} />
+          )}
+        </>
       )
     }
   }
