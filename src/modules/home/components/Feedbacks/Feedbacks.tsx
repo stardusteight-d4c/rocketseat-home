@@ -1,5 +1,7 @@
 import asset from "@/public/assets/feedback-section-asset.png"
 import arrowDown from "@/public/assets/icons/arrow-down-white.svg"
+import { useFeedbacks } from "./hooks/useFeedbacks"
+import { Feedback } from "./components/Feedback"
 
 interface FeedbacksProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -7,6 +9,9 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
   className,
   ...props
 }: FeedbacksProps) => {
+  const { feedbackFirstColData, feedbackSecondColData, feedbackThirdColData } =
+    useFeedbacks()
+
   return (
     <section className={"bg-dark-mid py-20 relative " + className} {...props}>
       <img
@@ -29,19 +34,25 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
             <span className="w-[200px] block text-lg text-white/80 leading-[28px]">
               O próximo depoimento pode ser seu!
             </span>
-            <img
-              src={arrowDown.src}
-              alt="arrow_down/svg"
-              className="w-8 h-8"
-            />
+            <img src={arrowDown.src} alt="arrow_down/svg" className="w-8 h-8" />
           </div>
         </div>
-        <div>
-
-    <div></div>
-    <div></div>
-    <div></div>
-
+        <div className="flex justify-between">
+          <div className="flex flex-col gap-y-8">
+            {feedbackFirstColData.map((item, index) => (
+              <Feedback key={index} data={item} />
+            ))}
+          </div>
+          <div className="flex flex-col gap-y-8">
+            {feedbackSecondColData.map((item, index) => (
+              <Feedback key={index} data={item} />
+            ))}
+          </div>
+          <div className="flex flex-col gap-y-8">
+            {feedbackThirdColData.map((item, index) => (
+              <Feedback key={index} data={item} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
