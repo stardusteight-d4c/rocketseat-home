@@ -1,7 +1,16 @@
+"use client"
+
+import { useState } from "react"
+
 import asset from "@/public/assets/feedback-section-asset.png"
 import arrowDown from "@/public/assets/icons/arrow-down-white.svg"
+import plus from "@/public/assets/icons/plus.svg"
+import minus from "@/public/assets/icons/minus.svg"
+
 import { useFeedbacks } from "./hooks/useFeedbacks"
 import { Feedback } from "./components/Feedback"
+import { Button } from "@/shared/components/atoms/ui/Button"
+import Image from "next/image"
 
 interface FeedbacksProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -11,6 +20,8 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
 }: FeedbacksProps) => {
   const { feedbackFirstColData, feedbackSecondColData, feedbackThirdColData } =
     useFeedbacks()
+
+  const [sliceValue, setSliceValue] = useState(3)
 
   return (
     <section className={"bg-dark-mid py-20 relative " + className} {...props}>
@@ -37,22 +48,47 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
             <img src={arrowDown.src} alt="arrow_down/svg" className="w-8 h-8" />
           </div>
         </div>
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-y-8">
-            {feedbackFirstColData.map((item, index) => (
-              <Feedback key={index} data={item} />
-            ))}
+        <div className="relative">
+          <div className="flex justify-between">
+            <div className="flex flex-col gap-y-8">
+              {feedbackFirstColData.slice(0, sliceValue).map((item, index) => (
+                <Feedback key={index} data={item} />
+              ))}
+            </div>
+            <div className="flex flex-col gap-y-8">
+              {feedbackSecondColData.slice(0, sliceValue).map((item, index) => (
+                <Feedback key={index} data={item} />
+              ))}
+            </div>
+            <div className="flex flex-col gap-y-8">
+              {feedbackThirdColData.slice(0, sliceValue).map((item, index) => (
+                <Feedback key={index} data={item} />
+              ))}
+            </div>
           </div>
-          <div className="flex flex-col gap-y-8">
-            {feedbackSecondColData.map((item, index) => (
-              <Feedback key={index} data={item} />
-            ))}
-          </div>
-          <div className="flex flex-col gap-y-8">
-            {feedbackThirdColData.map((item, index) => (
-              <Feedback key={index} data={item} />
-            ))}
-          </div>
+          {sliceValue === 3 && (
+            <div>
+              <div className="w-full h-[100px] bg-gradient-to-t from-dark-mid to-transparent absolute bottom-12" />
+              <Button
+                onClick={() => setSliceValue(6)}
+                className="!w-fit px-4 py-[10px] mx-auto bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
+              >
+                <Image src={plus} alt="plus/svg" />
+                <span className="text-white">Mostrar mais</span>
+              </Button>
+            </div>
+          )}
+           {sliceValue === 6 && (
+            <div>
+              <Button
+                onClick={() => setSliceValue(3)}
+                className="!w-fit px-4 py-[10px] mx-auto bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
+              >
+                <Image src={minus} alt="minus/svg" />
+                <span className="text-white">Mostrar menos</span>
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </section>

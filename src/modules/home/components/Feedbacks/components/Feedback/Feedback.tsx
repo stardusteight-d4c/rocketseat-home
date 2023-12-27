@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+import play from "@/public/assets/icons/play-purple.svg"
+
 interface FeedbackProps extends React.HTMLAttributes<HTMLDivElement> {
   data: FeedbackData
 }
@@ -44,14 +46,17 @@ export const Feedback: React.FC<FeedbackProps> = ({
             alt={`${data.author.toLocaleLowerCase().replaceAll(" ", "_")}/webp`}
             className="w-full h-full rounded-lg"
           />
-          <div className=" absolute z-10 left-4 bottom-5 flex flex-col gap-y-[6px]">
+          <div className="absolute z-10 left-4 bottom-5 flex flex-col gap-y-[6px]">
             <h4 className="font-bold leading-[20px] text-neutral text-sm">
               {data.author}
             </h4>
-            <span className="text-[#8D8D99] uppercase tracking-wide font-medium text-xs leading-[16px]">
+            <span className="text-[#8D8D99] uppercase font-medium text-xs leading-[16px]">
               {data.role}
             </span>
           </div>
+          <button className="rounded-full w-[45px] h-[45px] absolute z-10 right-4 bottom-5 bg-white flex items-center justify-center">
+            <Image src={play} alt="play/svg" className="-mr-[4px]" />
+          </button>
         </div>
       )
     }
