@@ -18,6 +18,7 @@ export function HomeModule() {
       <Home.Target />
       <Home.Solution />
       <Home.Feedbacks />
+      <Home.Community />
     </main>
   )
 }
