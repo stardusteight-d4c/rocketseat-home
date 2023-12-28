@@ -19,6 +19,7 @@ export function HomeModule() {
       <Home.Solution />
       <Home.Feedbacks />
       <Home.Community />
+      <Home.StartNow />
     </main>
   )
 }

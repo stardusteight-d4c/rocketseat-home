@@ -10,7 +10,7 @@ export const Community: React.FC<CommunityProps> = ({
   const { communityData } = useCommunity()
 
   return (
-    <section className={"bg-dark-str py-20 relative " + className} {...props}>
+    <section className={"bg-dark-str pt-20 pb-[240px] relative " + className} {...props}>
       <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
         <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
           CONSTRUA O FUTURO_

@@ -6,6 +6,7 @@ import { Target } from "./Target"
 import { Solution } from "./Solution"
 import { Feedbacks } from "./Feedbacks"
 import { Community } from "./Community"
+import { StartNow } from "./StartNow"
 
 import { BlackMonthAds } from "@/shared/components/organisms/ads/BlackMonthAds"
 
@@ -18,5 +19,6 @@ export const Home = {
   Target,
   Solution,
   Feedbacks,
-  Community
+  Community,
+  StartNow,
 }
