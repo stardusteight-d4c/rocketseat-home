@@ -16,3 +16,13 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.bg-gradient-rocketseat {
+  background-image: linear-gradient(
+    95.99deg,
+    rgba(41, 224, 169, 0.7) 7.66%,
+    rgba(95, 117, 242, 0.7) 41.15%,
+    rgba(153, 86, 246, 0.7) 75.03%,
+    rgba(226, 84, 255, 0.7) 98.16%
+  );
+}
