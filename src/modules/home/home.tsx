@@ -21,6 +21,7 @@ export function HomeModule() {
       <Home.Community />
       <Home.StartNow />
       <Home.Faq />
+      <Home.Footer />
     </main>
   )
 }

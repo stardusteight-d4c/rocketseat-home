@@ -26,7 +26,6 @@ export const Target: React.FC<TargetProps> = ({
       {...props}
     >
       <div className="h-[80px] bg-gradient-to-t from-dark-str to-dark-mid absolute inset-x-0 -top-[50px]" />
-
       <div className="bg-dark-mid max-w-[1230px] w-full flex flex-col rounded-lg p-[60px] border border-gray-600/[0.50]">
         <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">

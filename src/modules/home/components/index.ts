@@ -8,6 +8,7 @@ import { Feedbacks } from "./Feedbacks"
 import { Community } from "./Community"
 import { StartNow } from "./StartNow"
 import { Faq } from "./Faq"
+import { Footer } from "./Footer"
 
 import { BlackMonthAds } from "@/shared/components/organisms/ads/BlackMonthAds"
 
@@ -23,4 +24,5 @@ export const Home = {
   Community,
   StartNow,
   Faq,
+  Footer,
 }
