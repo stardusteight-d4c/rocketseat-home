@@ -1,10 +1,22 @@
+"use client"
+
+import { useState } from "react"
 import { FaqItem } from "./components/FaqItem"
 import { useFaq } from "./hooks/useFaq"
 
 interface FaqProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
+  const [show, setShow] = useState<number | undefined>(undefined)
   const { faqData } = useFaq()
+
+  function handleShow(position: number) {
+    if (show === position) {
+      setShow(undefined)
+    } else {
+      setShow(position)
+    }
+  }
 
   return (
     <section className={"py-20 bg-dark-str " + className} {...props}>
@@ -21,7 +33,13 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
         </div>
         <div className="flex flex-col w-full">
           {faqData.map((item, index) => (
-            <FaqItem key={index} data={item} position={index + 1} />
+            <FaqItem
+              key={index}
+              data={item}
+              position={index + 1}
+              show={show}
+              onShow={handleShow}
+            />
           ))}
         </div>
       </div>
