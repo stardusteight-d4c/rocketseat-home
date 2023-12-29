@@ -7,6 +7,7 @@ import { Solution } from "./Solution"
 import { Feedbacks } from "./Feedbacks"
 import { Community } from "./Community"
 import { StartNow } from "./StartNow"
+import { Faq } from "./Faq"
 
 import { BlackMonthAds } from "@/shared/components/organisms/ads/BlackMonthAds"
 
@@ -21,4 +22,5 @@ export const Home = {
   Feedbacks,
   Community,
   StartNow,
+  Faq,
 }
