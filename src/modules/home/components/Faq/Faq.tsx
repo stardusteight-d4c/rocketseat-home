@@ -1,8 +1,12 @@
 "use client"
 
 import { useState } from "react"
+
+import avatars from "@/public/assets/is-avatars.webp"
+
 import { FaqItem } from "./components/FaqItem"
 import { useFaq } from "./hooks/useFaq"
+import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface FaqProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -41,6 +45,20 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
               onShow={handleShow}
             />
           ))}
+          <div className="bg-dark-mid mt-20 w-full rounded-lg border border-gray-600/[0.50] p-6 flex items-center justify-between">
+            <div className="flex flex-col">
+              <img src={avatars.src} alt="avtars/webp" className="w-[122px] h-[47px]" />
+              <h5 className="mt-[19px] mb-[6px] text-[#E1E1E6] text-lg font-bold leading-[28px]">
+                Ficou com alguma dúvida?
+              </h5>
+              <span className="block text-[#8D8D99] leading-[20px] w-[270px] text-sm">
+                Envie uma mensagem e converse com uma pessoal real.
+              </span>
+            </div>
+            <Button className="!w-fit !py-4 !bg-system-success text-sm hover:brightness-110 tracking-normal border !border-systbg-system-success !text-dark-mid uppercase font-bold backdrop-blur-sm">
+              <span className="uppercase">Chamar no WhatsApp</span>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

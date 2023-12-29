@@ -19,7 +19,10 @@ export const FaqItem: React.FC<FaqItemProps> = ({
 }: FaqItemProps) => {
   return (
     <div className={"flex flex-col " + className} {...props}>
-      <div className="flex items-center cursor-pointer justify-between w-full border-t border-t-gray-600/[0.50] py-4">
+      <div
+        onClick={() => onShow(position)}
+        className="flex items-center cursor-pointer justify-between w-full border-t border-t-gray-600/[0.50] py-4"
+      >
         <div className="flex items-center gap-x-10">
           <span className={`text-[#737380] text-xl block font-bold`}>
             {position}.
@@ -36,7 +39,6 @@ export const FaqItem: React.FC<FaqItemProps> = ({
           src={caretDown.src}
           alt="caret_down/svg"
           className={`${show === position && "rotate-180"}`}
-          onClick={() => onShow(position)}
         />
       </div>
       {show === position && (
