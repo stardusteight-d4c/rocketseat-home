@@ -38,7 +38,7 @@ export const ListItem: React.FC<ListItemProps> = ({
       return (
         <ul className="flex flex-col gap-y-2">
           {data.items.map((item, index) => (
-            <li key={index} className="text-[#E1E1E6] cursor-pointer hover:underline leading-[24px]">
+            <li key={index} className="text-[#E1E1E6] block w-fit cursor-pointer hover:underline leading-[24px]">
               {item.title}
             </li>
           ))}
