@@ -1,6 +1,8 @@
 import mailCheck from "@/public/assets/icons/mail-check.svg"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 import { Button } from "@/shared/components/atoms/ui/Button"
+import { useFooter } from "./hooks/useFooter"
+import { ListItem } from "./components/ListItem"
 
 interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -8,6 +10,8 @@ export const Footer: React.FC<FooterProps> = ({
   className,
   ...props
 }: FooterProps) => {
+  const { footerData } = useFooter()
+
   return (
     <section
       className={
@@ -35,7 +39,13 @@ export const Footer: React.FC<FooterProps> = ({
             <ArrowRight className="-mb-[3px]" />
           </Button>
         </div>
-        <div className="border-y border-y-gray-600/[0.50] py-8 mt-8"></div>
+        <div className="border-y border-y-gray-600/[0.50] py-8 mt-8">
+          <div className="grid grid-cols-5 w-full">
+            {footerData.map((item, index) => (
+              <ListItem key={index} data={item} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )
