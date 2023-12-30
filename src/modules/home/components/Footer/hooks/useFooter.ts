@@ -53,6 +53,6 @@ export function useFooter() {
   ]
 
   return {
-    a: "",
+    footerData,
   }
 }
