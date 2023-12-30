@@ -1,6 +1,11 @@
 import mailCheck from "@/public/assets/icons/mail-check.svg"
+import boostingPeople from "@/public/assets/boosting-people.svg"
+import caretDown from "@/public/assets/icons/caret-down.svg"
+import arrowTop from "@/public/assets/icons/arrow-top.svg"
+
 import { ArrowRight } from "@/shared/components/atoms/icons"
 import { Button } from "@/shared/components/atoms/ui/Button"
+
 import { useFooter } from "./hooks/useFooter"
 import { ListItem } from "./components/ListItem"
 
@@ -10,12 +15,13 @@ export const Footer: React.FC<FooterProps> = ({
   className,
   ...props
 }: FooterProps) => {
-  const { footerData } = useFooter()
+  const { footerData, socialLinks } = useFooter()
 
   return (
     <section
       className={
-        "bg-dark-str py pt-20 border-t border-t-gray-600/[0.50] " + className
+        "bg-dark-str py pt-20 border-t border-t-gray-600/[0.50] flex flex-col " +
+        className
       }
       {...props}
     >
@@ -46,7 +52,45 @@ export const Footer: React.FC<FooterProps> = ({
             ))}
           </div>
         </div>
+        <div className="border-b border-b-gray-600/[0.50] py-8 flex justify-between items-center">
+          <img src={boostingPeople.src} alt="boosting_people/svg" />
+          <div className="flex items-center gap-x-4">
+            {socialLinks.map((item, index) => (
+              <ContentChildrenItem key={index} src={item.icon} />
+            ))}
+          </div>
+        </div>
+        <div className="border-b border-b-gray-600/[0.50] py-8 flex justify-between items-center">
+          <span className="text-neutral block leading-[24px]">
+            Rocketseat. Todos os direitos reservados.
+          </span>
+          <span className="text-neutral gap-x-1 cursor-pointer leading-[24px] underline flex items-center">
+            Queremos o seu Feedback
+            <img
+              src={caretDown.src}
+              alt="caret_down/svg"
+              className="-rotate-90 antialiased -mb-[2px]"
+            />
+          </span>
+          <Button className="!w-fit flex gap-x-1 px-4 py-[10px] bg-transparent hover:bg-neutral/[0.10] font-bold text-sm tracking-normal bg-brand-primary text-white uppercase backdrop-blur-sm">
+            Voltar ao topo
+            <span>
+              <img
+                src={arrowTop.src}
+                alt="caret_down/svg"
+                className="antialiased"
+              />
+            </span>
+          </Button>
+        </div>
       </div>
+      <div className="bg-gradient-rocketseat h-1 w-full" />
     </section>
   )
 }
+
+const ContentChildrenItem = ({ src }: { src: string }) => (
+  <div className="flex items-center justify-center rounded-lg w-12 h-12 bg-gradient-to-t from-dark-low to-dark-mid">
+    <img src={src} className="w-6 h-6" />
+  </div>
+)

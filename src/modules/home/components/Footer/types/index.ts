@@ -5,3 +5,9 @@ interface FooterData {
     link?: string
   }>
 }
+
+interface SocialLinks {
+  title: string
+  icon: string
+  link?: string
+}
