@@ -10,8 +10,8 @@ export function HomeModule() {
         <Navbar.Login />
         <Navbar.Subscription />
       </Navbar.Root>
-      {/* <Home.Ads />
-      <Home.Hero />
+      <Home.Ads />
+      {/* <Home.Hero />
       <Home.Video />
       <Home.Students />
       <Home.Formations />
