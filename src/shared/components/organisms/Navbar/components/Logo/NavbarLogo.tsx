@@ -7,7 +7,8 @@ export const NavbarLogo: React.FC<NavbarLogoProps> = ({
 }: NavbarLogoProps) => {
   return (
     <div {...props} className="cursor-pointer">
-      <RocketseatLogo />
+      <RocketseatLogo min={false} className="hidden md:block" />
+      <RocketseatLogo min={true} className="block md:hidden" />
     </div>
   )
 }

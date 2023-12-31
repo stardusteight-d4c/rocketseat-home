@@ -11,10 +11,10 @@ export const NavbarSubscription: React.FC<NavbarSubscriptionProps> = ({
 }: NavbarSubscriptionProps) => {
   return (
     <Button
-      className="!w-fit px-4 py-[10px] bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
+      className="!w-fit lg:px-4 !px-3 !py-2 lg:py-[10px] bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
       {...props}
     >
-      <span className="text-white">Assinar Agora</span>
+      <span className="text-white text-sm lg:text-base whitespace-nowrap">Assinar Agora</span>
       <ArrowRight className="-mb-[3px]" />
     </Button>
   )
