@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
             conquiste as melhores vagas
           </span>
         </h1>
-        <span className="text-neutral text-xl max-w-[630px] w-full block mt-10 text-start lg:text-center mx-auto leading-[28px]">
+        <span className="text-neutral text-xl max-w-[630px] w-full block mt-10 text-start lg:text-center lg:mx-auto leading-[28px]">
           A plataforma completa pra você aprender programação do zero no seu
           ritmo, se tornar Full Stack e se especializar em diversas tecnologias.
         </span>

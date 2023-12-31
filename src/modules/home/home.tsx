@@ -11,9 +11,9 @@ export function HomeModule() {
         <Navbar.Subscription />
       </Navbar.Root>
       <Home.Ads />
-     <Home.Hero />
-      {/*  <Home.Video />
-      <Home.Students />
+      <Home.Hero />
+      <Home.Video />
+      {/*  <Home.Students />
       <Home.Formations />
       <Home.Target />
       <Home.Solution />

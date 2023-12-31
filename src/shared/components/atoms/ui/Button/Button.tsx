@@ -42,10 +42,10 @@ export const Button: React.FC<ButtonProps> = ({
           "flex items-center flex-col w-fit gap-y-2 h-fit " + className
         }
       >
-        <button className="rounded-full py-7 pl-[30px] pr-[26px] bg-white/10 flex items-center justify-center">
+        <button className="rounded-full w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] bg-white/10 flex items-center justify-center">
           <Image src={play} alt="play/svg" />
         </button>
-        <span className="max-w-[215px] font-bold text-lg w-full text-center leading-[24px]">
+        <span className="max-w-[215px] font-bold text-sm lg:text-lg w-full text-center leading-[24px]">
           {title}
         </span>
       </div>
