@@ -10,7 +10,7 @@ export function HomeModule() {
         <Navbar.Login />
         <Navbar.Subscription />
       </Navbar.Root>
-      <Home.Ads />
+      {/* <Home.Ads />
       <Home.Hero />
       <Home.Video />
       <Home.Students />
@@ -21,7 +21,7 @@ export function HomeModule() {
       <Home.Community />
       <Home.StartNow />
       <Home.Faq />
-      <Home.Footer />
+      <Home.Footer /> */}
     </main>
   )
 }
