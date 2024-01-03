@@ -22,23 +22,23 @@ export const Formations: React.FC<FormationsProps> = ({
       {...props}
     >
       <div className="h-[80px] bg-gradient-to-b from-dark-str to-dark-mid absolute inset-x-0 -top-[50px]" />
-      <div>
-        <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
+      <div className="px-3 md:px-0">
+        <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit lg:mx-auto">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             DO ZERO AO AVANÇADO_
           </span>
         </div>
-        <h3 className="text-white text-4xl text-center font-bold leading-[40px] mt-5">
+        <h3 className="text-white text-3xl lg:text-4xl lg:text-center font-bold leading-[40px] mt-5">
           Conheça nossas formações em programação
         </h3>
-        <div className="mt-10 grid grid-cols-3 gap-[34px]">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[34px]">
           {formationsData.map((item, index) => (
             <FormationCard key={index} data={item} />
           ))}
         </div>
         <div className="max-w-[1230px] w-full">
           <div className="border-t h-[0px] w-full border-t-gray-600/[0.50] my-10" />
-          <div className="grid grid-cols-4 gap-x-7 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-7 items-start">
             {infoData.map((item, index) => (
               <Info key={index} data={item} />
             ))}

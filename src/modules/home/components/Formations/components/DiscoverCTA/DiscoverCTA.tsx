@@ -12,12 +12,12 @@ export const DiscoverCTA: React.FC<DiscoverCTAProps> = ({
   return (
     <div
       className={
-        "bg-dark-str mt-10 flex items-center justify-between w-full p-8 border border-gray-600/[0.50] rounded-lg " +
+        "bg-dark-str mt-10 flex flex-col lg:flex-row items-center justify-between w-full p-5 lg:p-8 border border-gray-600/[0.50] rounded-lg " +
         className
       }
       {...props}
     >
-      <div className="flex items-center gap-x-6">
+      <div className="flex lg:items-center flex-col lg:flex-row gap-6">
         <Image src={discover} alt="discover/svg" />
         <div className="flex flex-col gap-y-[10px]">
           <h5 className="text-white font-bold text-xl leading-[28px]">
@@ -30,7 +30,7 @@ export const DiscoverCTA: React.FC<DiscoverCTAProps> = ({
           </span>
         </div>
       </div>
-      <Button className="!w-fit !py-4 text-sm hover:brightness-110 tracking-normal border text-white !border-brand-primary bg-brand-primary uppercase font-bold backdrop-blur-sm">
+      <Button className="!w-full lg:!w-fit !py-4 mt-6 lg:mt-0 text-sm hover:brightness-110 tracking-normal border text-white !border-brand-primary bg-brand-primary uppercase font-bold backdrop-blur-sm">
         <span className="text-white uppercase">COMECE A ESTUDAR AGORA</span>
         <ArrowRight className="-mb-[3px]" />
       </Button>

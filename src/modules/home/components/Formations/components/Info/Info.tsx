@@ -15,7 +15,7 @@ export const Info: React.FC<InfoProps> = ({
       <h4 className="mt-4 mb-3 font-bold text-white text-2xl leading-[32px]">
         {data.title}
       </h4>
-      <span className="text-neutral text-sm">{data.description}</span>
+      <span className="text-neutral text-start text-sm">{data.description}</span>
     </div>
   )
 }

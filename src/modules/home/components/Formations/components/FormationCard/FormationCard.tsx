@@ -18,19 +18,17 @@ export const FormationCard: React.FC<FormationCardProps> = ({
   return (
     <div
       className={
-        "bg-dark-str col-span-1 border border-gray-600/[0.50] text-white w-fit p-6 rounded-lg " +
+        "bg-dark-str col-span-1 border border-gray-600/[0.50] text-white w-full lg:w-fit p-6 rounded-lg " +
         className
       }
       {...props}
     >
       <div className="flex flex-col gap-y-4 rounded-sm">
         <div className="relative">
-          <Image
+          <img
             src={data.formationImage}
             alt={`${data.title.toLocaleLowerCase().replaceAll(" ", "_")}/svg`}
-            width={334}
-            height={139.16}
-            className="w-[334px] h-[139.16px] rounded-sm"
+            className="md:max-w-[334px] w-full lg:h-[139.16px] object-cover rounded-sm"
           />
           {data.launching && (
             <div className="flex items-center gap-x-[4px] px-2 py-1 top-0 left-0 absolute bg-gradient-to-tr from-brand-primary to-brand-secondary rounded-br-md rounded-tl-sm shadow-md shadow-black/30">
