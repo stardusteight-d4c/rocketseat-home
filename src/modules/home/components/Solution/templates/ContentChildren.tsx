@@ -21,7 +21,7 @@ const assetsData = [
 interface ContentChildrenProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const ContentChildren: React.FC<ContentChildrenProps> = () => (
-  <div className="flex items-center gap-x-4">
+  <div className="flex items-center flex-wrap gap-4 justify-start">
     {assetsData.map((item, index) => (
       <ContentChildrenItem key={index} src={item} />
     ))}
