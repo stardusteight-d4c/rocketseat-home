@@ -30,14 +30,14 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
         alt="asset/png"
         className="absolute top-0 right-0 z-0 w-[669px] h-[497px]"
       />
-      <div className="max-w-[1230px] w-full mx-auto relative z-10">
+      <div className="max-w-[1230px] px-3 md:px-0 w-full mx-auto relative z-10">
         <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             DEPOIMENTOS DE ALUNOS E ALUNAS_
           </span>
         </div>
-        <div className="flex items-center justify-between">
-          <h3 className="text-4xl font-bold text-white leading-[40px] mt-8 mb-[60px] w-full max-w-[670px]">
+        <div className="flex flex-col mb-6 lg:mb-0 lg:flex-row lg:items-center justify-between">
+          <h3 className="text-4xl font-bold text-white leading-[40px] mt-8 mb-[60px] w-full lg:max-w-[670px]">
             Eles conquistaram seus objetivos de carreira e transformaram suas
             vidas
           </h3>
@@ -49,7 +49,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
           </div>
         </div>
         <div className="relative">
-          <div className="flex justify-between">
+          <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-between">
             <div className="flex flex-col gap-y-8">
               {feedbackFirstColData.slice(0, sliceValue).map((item, index) => (
                 <Feedback key={index} data={item} />
@@ -82,7 +82,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
             <div>
               <Button
                 onClick={() => setSliceValue(3)}
-                className="!w-fit px-4 py-[10px] mx-auto bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
+                className="!w-fit px-4 py-[10px] mx-auto mt-4 lg:mt-0 bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
               >
                 <Image src={minus} alt="minus/svg" />
                 <span className="text-white">Mostrar menos</span>
