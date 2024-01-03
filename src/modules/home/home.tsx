@@ -13,8 +13,8 @@ export function HomeModule() {
       <Home.Ads />
       <Home.Hero />
       <Home.Video />
-      {/*  <Home.Students />
-      <Home.Formations />
+      <Home.Students />
+      {/*  <Home.Formations />
       <Home.Target />
       <Home.Solution />
       <Home.Feedbacks />

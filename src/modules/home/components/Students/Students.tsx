@@ -19,13 +19,13 @@ export const Students: React.FC<StudentsProps> = ({
       }
       {...props}
     >
-      <div className="flex items-center justify-between max-w-[1230px] w-full">
+      <div className="flex items-center px-3 md:px-0 flex-col lg:flex-row gap-y-16 lg:justify-between max-w-[1230px] w-full">
         <div className="flex flex-col">
-          <span className="text-neutral leading-[24px]">
+          <span className="text-neutral mx-auto lg:mx-0 leading-[24px]">
             Empresas que contratam nosso alunos
           </span>
           <div className="border-t h-[0px] w-full border-t-gray-600/[0.50] my-4" />
-          <div className="flex gap-x-10 items-center">
+          <div className="flex flex-wrap lg:flex-nowrap gap-10 items-center justify-center">
             {companies.map((company, index) => (
               <Image
                 key={index}
@@ -38,7 +38,7 @@ export const Students: React.FC<StudentsProps> = ({
           </div>
         </div>
         <div>
-          <div className="flex items-center gap-x-6 text-neutral leading-[24px]">
+          <div className="flex items-center text-sm lg:text-base gap-x-6 text-neutral leading-[24px]">
             <Image src={students} alt="students/png" className="w-[147px]" />
             <span className="max-w-[257px] w-full">
               Mais de <strong>55 mil</strong> alunos e alunas no Brasil e no
