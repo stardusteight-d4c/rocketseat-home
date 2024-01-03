@@ -15,8 +15,8 @@ export function HomeModule() {
       <Home.Video />
       <Home.Students />
       <Home.Formations />
-      {/*  <Home.Target />
-      <Home.Solution />
+      <Home.Target />
+      {/* <Home.Solution />
       <Home.Feedbacks />
       <Home.Community />
       <Home.StartNow />

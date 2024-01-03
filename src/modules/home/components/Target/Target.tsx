@@ -20,22 +20,22 @@ export const Target: React.FC<TargetProps> = ({
   return (
     <section
       className={
-        "bg-dark-str flex-col relative max-w-[100vw] py-20 flex items-center justify-center  " +
+        "bg-dark-str flex-col px-3 md:px-0 relative max-w-[100vw] py-20 flex items-center justify-center  " +
         className
       }
       {...props}
     >
       <div className="h-[80px] bg-gradient-to-t from-dark-str to-dark-mid absolute inset-x-0 -top-[50px]" />
-      <div className="bg-dark-mid max-w-[1230px] w-full flex flex-col rounded-lg p-[60px] border border-gray-600/[0.50]">
+      <div className="bg-dark-mid max-w-[1230px] w-full flex flex-col rounded-lg p-5 lg:p-[60px] border border-gray-600/[0.50]">
         <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             PARA QUEM É?_
           </span>
         </div>
-        <h3 className="text-white text-4xl mb-[60px] text-center font-bold leading-[40px] mt-5">
+        <h3 className="text-white text-3xl lg:text-4xl mb-[60px] text-center font-bold leading-[40px] mt-5">
           Independente do seu nível a Rocketseat é para você
         </h3>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center flex-col lg:flex-row justify-between">
           <div className="flex flex-col max-w-[414px] w-full">
             {purposeData.map((item, index) => (
               <Purpose
@@ -46,13 +46,10 @@ export const Target: React.FC<TargetProps> = ({
               />
             ))}
           </div>
-          <Image
-            src={workGroup}
-            width={533}
-            height={419}
-            quality={100}
+          <img
+            src={workGroup.src}
             alt="work_group/png"
-            className="w-[533px] h-[419px] object-cover"
+            className="w-full lg:w-[533px] lg:h-[419px] mt-[60px] lg:mt-0 lg:object-cover"
           />
         </div>
         <div className="w-full h-[42px] mt-[60px] mb-8 relative">
@@ -64,19 +61,19 @@ export const Target: React.FC<TargetProps> = ({
             </span>
           </div>
         </div>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-4">
           {targetData.map((item, index) => (
             <TargetCheck key={index} target={item} />
           ))}
         </div>
       </div>
-      <div className="bg-gradient-to-tr from-brand-primary via-brand-primary to-brand-secondary max-w-[1230px] w-full mt-20 rounded-lg flex justify-between p-10">
-        <h2 className="font-bold max-w-[378px] tracking-wide w-full text-2xl leading-[36px] text-white">
+      <div className="bg-gradient-to-tr from-brand-primary via-brand-primary to-brand-secondary max-w-[1230px] w-full mt-20 rounded-lg flex flex-col lg:flex-row justify-between p-5 lg:p-10">
+        <h2 className="font-bold lg:max-w-[378px] tracking-wide text-center lg:text-start w-full text-xl lg:text-2xl lg:leading-[36px] text-white">
           Transforme sua carreira em programação na Rocketseat
         </h2>
-        <div className="flex items-center gap-x-6">
-          <Image src={arrowRight} alt="arrow_right/svg" />
-          <Button className="!w-fit !py-4 !bg-white text-sm hover:brightness-110 tracking-normal border !border-white !text-brand-primary uppercase font-bold backdrop-blur-sm">
+        <div className="flex items-center flex-col lg:flex-row mt-6 lg:mt-0 gap-6">
+          <Image src={arrowRight} alt="arrow_right/svg" className="rotate-90 lg:rotate-0" />
+          <Button className="!w-full lg:!w-fit !py-4 !bg-white text-sm hover:brightness-110 tracking-normal border !border-white !text-brand-primary uppercase font-bold backdrop-blur-sm">
             <span className="uppercase">COMECE A ESTUDAR AGORA</span>
           </Button>
         </div>
