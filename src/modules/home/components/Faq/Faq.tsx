@@ -24,14 +24,14 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
 
   return (
     <section className={"py-20 bg-dark-str " + className} {...props}>
-      <div className="flex items-start gap-x-[154px] max-w-[1230px] w-full mx-auto">
+      <div className="flex px-3 md:px-0 items-start flex-col lg:flex-row gap-x-[154px] max-w-[1230px] w-full mx-auto">
         <div className="flex flex-col items-start gap-y-4">
           <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit">
             <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
               FAQ_
             </span>
           </div>
-          <h2 className="text-4xl whitespace-nowrap font-bold leading-[40px] mt-6 w-full text-white">
+          <h2 className="text-3xl lg:text-4xl mb-11 lg:mb-0 whitespace-nowrap font-bold leading-[40px] mt-6 w-full text-white">
             Perguntas e respostas <br /> mais frequentes
           </h2>
         </div>
@@ -45,7 +45,7 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
               onShow={handleShow}
             />
           ))}
-          <div className="bg-dark-mid mt-20 w-full rounded-lg border border-gray-600/[0.50] p-6 flex items-center justify-between">
+          <div className="bg-dark-mid mt-20 w-full rounded-lg border border-gray-600/[0.50] p-6 flex flex-col lg:flex-row lg:items-center justify-between">
             <div className="flex flex-col">
               <img src={avatars.src} alt="avtars/webp" className="w-[122px] h-[47px]" />
               <h5 className="mt-[19px] mb-[6px] text-[#E1E1E6] text-lg font-bold leading-[28px]">
@@ -55,7 +55,7 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
                 Envie uma mensagem e converse com uma pessoal real.
               </span>
             </div>
-            <Button className="!w-fit !py-4 !bg-system-success text-sm hover:brightness-110 tracking-normal border !border-systbg-system-success !text-dark-mid uppercase font-bold backdrop-blur-sm">
+            <Button className="lg:!w-fit !py-4 mt-4 lg:mt-0 !bg-system-success text-sm hover:brightness-110 tracking-normal border !border-systbg-system-success !text-dark-mid uppercase font-bold backdrop-blur-sm">
               <span className="uppercase">Chamar no WhatsApp</span>
             </Button>
           </div>
