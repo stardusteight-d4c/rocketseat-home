@@ -16,13 +16,13 @@ export const ListItem: React.FC<ListItemProps> = ({
     if (data.category === "Comece a estudar") {
       return (
         <ul className="flex flex-col gap-y-4">
-          <Button className="w-full !max-w-[190px] !py-4 text-sm hover:brightness-110 tracking-normal border text-white !border-brand-primary bg-brand-primary uppercase font-bold backdrop-blur-sm">
+          <Button className="w-full lg:!max-w-[190px] !py-4 text-sm hover:brightness-110 tracking-normal border text-white !border-brand-primary bg-brand-primary uppercase font-bold backdrop-blur-sm">
             <span className="text-white uppercase whitespace-nowrap">
               {data.items[0].title}
             </span>
             <ArrowRight className="-mb-[3px]" />
           </Button>
-          <Button className="w-full !max-w-[190px] text-center !py-4 bg-dark-low !text-sm tracking-normal border text-white border-darlbg-dark-low hover:!border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm">
+          <Button className="w-full lg:!max-w-[190px] text-center !py-4 bg-dark-low !text-sm tracking-normal border text-white border-darlbg-dark-low hover:!border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm">
             <img src={whatsappLogo.src} className="w-[18px] h-[18px]" />
             <span className="text-white uppercase whitespace-nowrap">
               {data.items[1].title}
