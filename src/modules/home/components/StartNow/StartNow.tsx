@@ -27,15 +27,15 @@ export const StartNow: React.FC<StartNowProps> = ({
         alt="start_now/svg"
         className="absolute z-0 left-1/2 -translate-x-1/2 -top-[160px]"
       />
-      <div className="relative z-30">
+      <div className="relative px-3 md:px-0 z-30">
         <h2 className="text-center text-white text-4xl font-bold leading-[40px]">
           Comece agora sua jornada em programação
         </h2>
         <span className="text-center block text-[#E1E1E6] mt-4">
           Acelere para o seu próximo nível de carreira e nunca pare de aprender
         </span>
-        <div className="mt-10 flex items-center gap-x-6 justify-center">
-          <Button className="!w-fit !py-4 !bg-white text-sm hover:brightness-110 tracking-normal border !border-white !text-brand-primary uppercase font-bold backdrop-blur-sm">
+        <div className="mt-10 flex items-center flex-col lg:flex-row gap-6 justify-center">
+          <Button className="!w-full lg:!w-fit !py-4 !bg-white text-sm hover:brightness-110 tracking-normal border !border-white !text-brand-primary uppercase font-bold backdrop-blur-sm">
             <span className="uppercase">Embarque agora</span>
           </Button>
           <div className="flex items-center group cursor-pointer gap-x-2 text-white uppercase font-bold">
