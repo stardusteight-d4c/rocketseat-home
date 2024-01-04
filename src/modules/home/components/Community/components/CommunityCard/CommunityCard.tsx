@@ -16,7 +16,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
   return (
     <div
       className={
-        "p-6 bg-transparent hover:bg-dark-low/30 max-w-[278px] w-full h-[298px] rounded-lg flex flex-col gap-y-6 border border-gray-600/[0.50] " +
+        "p-6 bg-transparent hover:bg-dark-low/30 lg:max-w-[278px] w-full h-[298px] rounded-lg flex flex-col gap-y-6 border border-gray-600/[0.50] " +
         className
       }
       {...props}

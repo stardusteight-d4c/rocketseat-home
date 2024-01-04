@@ -18,8 +18,8 @@ export function HomeModule() {
       <Home.Target />
       <Home.Solution />
       <Home.Feedbacks />
-      {/* <Home.Community />
-      <Home.StartNow />
+      <Home.Community />
+      {/*<Home.StartNow />
       <Home.Faq />
       <Home.Footer /> */}
     </main>
