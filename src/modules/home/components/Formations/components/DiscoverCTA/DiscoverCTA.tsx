@@ -12,7 +12,7 @@ export const DiscoverCTA: React.FC<DiscoverCTAProps> = ({
   return (
     <div
       className={
-        "bg-dark-str mt-10 flex flex-col lg:flex-row items-center justify-between w-full p-5 lg:p-8 border border-gray-600/[0.50] rounded-lg " +
+        "bg-dark-str mt-10 flex flex-col lg:flex-row lg:items-center justify-between w-full p-5 lg:p-8 border border-gray-600/[0.50] rounded-lg " +
         className
       }
       {...props}

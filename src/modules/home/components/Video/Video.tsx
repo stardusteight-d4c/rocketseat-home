@@ -10,12 +10,12 @@ export const Video: React.FC<VideoProps> = ({
   return (
     <section
       className={
-        "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary relative h-[175px] lg:h-[458px] max-w-[100vw] " +
+        "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-secondary relative h-[175px] md:h-[200px] lg:h-[458px] max-w-[100vw] " +
         className
       }
       {...props}
     >
-      <div className="relative mx-3 lg:mx-0 h-[175px] lg:h-[458px] max-w-[100vw]">
+      <div className="relative mx-3 lg:mx-0 h-[175px] md:h-[200px] lg:h-[458px] max-w-[100vw]">
         <div className="absolute lg:-mt-[214px] -bottom-2 lg:bottom-auto z-[50] left-1/2 border-[8px] lg:border-[10px] max-w-full lg:max-w-[1230px] w-full overflow-y-hidden h-[200px] xxs:h-[250px] xs:h-[300px] md:h-[400px] lg:h-[682px] -translate-x-1/2 border-dark-str rounded-b-none rounded-lg  mx-auto">
           <div className="relative">
             <img

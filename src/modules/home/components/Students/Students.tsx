@@ -19,7 +19,7 @@ export const Students: React.FC<StudentsProps> = ({
       }
       {...props}
     >
-      <div className="flex items-center px-3 md:px-0 flex-col lg:flex-row gap-y-16 lg:justify-between max-w-[1230px] w-full">
+      <div className="flex items-center px-3 lg:px-0 flex-col lg:flex-row gap-y-16 lg:justify-between max-w-[1230px] w-full">
         <div className="flex flex-col">
           <span className="text-neutral mx-auto lg:mx-0 leading-[24px]">
             Empresas que contratam nosso alunos
