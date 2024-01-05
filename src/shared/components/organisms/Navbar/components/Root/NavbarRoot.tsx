@@ -4,8 +4,11 @@ import { useState } from "react"
 
 import menu from "@/public/assets/menu.svg"
 import close from "@/public/assets/close.svg"
+import whatsappLogo from "@/public/assets/icons/whatsapp-logo.svg"
 
 import { NavbarMobileNavigation } from "../Navigation/NavbarMobileNavigation"
+import { Button } from "@/shared/components/atoms/ui/Button"
+import { ArrowRight } from "@/shared/components/atoms/icons"
 
 interface NavbarRootProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "children"> {
@@ -52,8 +55,22 @@ export const NavbarRoot: React.FC<NavbarRootProps> = ({
               />
             )}
             {openMenu && (
-              <div className="bg-dark-str absolute border-t border-t-gray-600/[0.50] top-full inset-x-0">
+              <div className="bg-dark-str flex flex-col absolute border-y border-y-gray-600/[0.50] shadow-md shadow-black/50 top-full inset-x-0">
                 {hasNavigation && <NavbarMobileNavigation />}
+                <div className="flex flex-col gap-y-4 px-4 py-6">
+                  <Button className="w-full lg:!max-w-[190px] text-center !py-4 bg-dark-low !text-sm tracking-normal border text-white border-darlbg-dark-low hover:!border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm">
+                    <img src={whatsappLogo.src} className="w-[18px] h-[18px]" />
+                    <span className="text-white uppercase whitespace-nowrap">
+                      Fale conosco
+                    </span>
+                  </Button>
+                  <Button className="w-full lg:!max-w-[190px] !py-4 text-sm hover:brightness-110 tracking-normal border text-white hover:bg-brand-primary !border-brand-primary bg-transparent uppercase font-bold backdrop-blur-sm">
+                    <ArrowRight className="-mb-[3px]" />
+                    <span className="text-white uppercase whitespace-nowrap">
+                      Fazer login
+                    </span>
+                  </Button>
+                </div>
               </div>
             )}
           </div>
