@@ -20,7 +20,7 @@ export const Target: React.FC<TargetProps> = ({
   return (
     <section
       className={
-        "bg-dark-str flex-col px-3 md:px-0 relative max-w-[100vw] py-20 flex items-center justify-center  " +
+        "bg-dark-str flex-col px-3 lg:px-0 relative max-w-[100vw] py-20 flex items-center justify-center  " +
         className
       }
       {...props}
@@ -56,12 +56,12 @@ export const Target: React.FC<TargetProps> = ({
           <div className="border-t z-10 h-[0px] inset-x-0 absolute top-1/2 -translate-y-1/2 w-full border-t-gray-600/[0.50] mb-7" />
           <div className="absolute bg-dark-mid h-4 w-[260px] z-20 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2" />
           <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 z-30 absolute backdrop-blur-sm top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 rounded-lg p-2 w-fit mx-auto">
-            <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
+            <span className="font-bold whitespace-nowrap uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
               TAMBÉM É PARA QUEM_
             </span>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 lg:grid-cols-4">
           {targetData.map((item, index) => (
             <TargetCheck key={index} target={item} />
           ))}
