@@ -24,7 +24,7 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
 
   return (
     <section className={"py-20 bg-dark-str " + className} {...props}>
-      <div className="flex px-3 md:px-0 items-start flex-col lg:flex-row gap-x-[154px] max-w-[1230px] w-full mx-auto">
+      <div className="flex px-3 lg:px-0 items-start flex-col lg:flex-row gap-x-[154px] max-w-[1230px] w-full mx-auto">
         <div className="flex flex-col items-start gap-y-4">
           <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit">
             <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">

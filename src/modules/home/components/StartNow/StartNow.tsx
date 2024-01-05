@@ -27,7 +27,7 @@ export const StartNow: React.FC<StartNowProps> = ({
         alt="start_now/svg"
         className="absolute z-0 left-1/2 -translate-x-1/2 -top-[160px]"
       />
-      <div className="relative px-3 md:px-0 z-30">
+      <div className="relative px-3 lg:px-0 z-30">
         <h2 className="text-center text-white text-4xl font-bold leading-[40px]">
           Comece agora sua jornada em programação
         </h2>

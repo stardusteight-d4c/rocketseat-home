@@ -11,7 +11,7 @@ export const Community: React.FC<CommunityProps> = ({
 
   return (
     <section
-      className={"bg-dark-str px-3 md:px-0 pt-20 pb-[240px] relative " + className}
+      className={"bg-dark-str px-3 lg:px-0 pt-20 pb-[240px] relative " + className}
       {...props}
     >
       <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit mx-auto">
