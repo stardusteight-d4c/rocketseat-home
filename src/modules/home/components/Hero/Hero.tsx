@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ ...props }: HeroProps) => {
         alt="background_hero/svg"
         className="w-screen object-cover h-[800px]"
       />
-      <div className="absolute px-3 md:px-0 top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
+      <div className="absolute px-3 lg:px-0 top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
         <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit lg:mx-auto">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             HELLO WORLD_

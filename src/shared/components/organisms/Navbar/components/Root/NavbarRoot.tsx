@@ -65,10 +65,10 @@ export const NavbarRoot: React.FC<NavbarRootProps> = ({
                     </span>
                   </Button>
                   <Button className="w-full lg:!max-w-[190px] !py-4 text-sm hover:brightness-110 tracking-normal border text-white hover:bg-brand-primary !border-brand-primary bg-transparent uppercase font-bold backdrop-blur-sm">
-                    <ArrowRight className="-mb-[3px]" />
                     <span className="text-white uppercase whitespace-nowrap">
                       Fazer login
                     </span>
+                    <ArrowRight className="-mb-[3px]" />
                   </Button>
                 </div>
               </div>
