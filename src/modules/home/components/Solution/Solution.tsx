@@ -22,7 +22,7 @@ export const Solution: React.FC<SolutionProps> = ({
         quality={100}
         className="w-screen absolute inset-x-0 h-[30vh] lg:h-[75vh] object-fill lg:object-cover border-t border-t-gray-600/[0.50]"
       />
-      <div className="absolute px-3 md:px-0 top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
+      <div className="absolute px-3 lg:px-0 top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
         <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit lg:mx-auto">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             SOLUÇÃO COMPLETA_

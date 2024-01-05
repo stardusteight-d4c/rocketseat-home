@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 interface SolutionCardProps extends React.HTMLAttributes<HTMLDivElement> {
   data: SolutionCardData
   index: number
@@ -16,7 +14,7 @@ export const SolutionCard: React.FC<SolutionCardProps> = ({
   return (
     <div
       className={
-        `items-center flex flex-col-reverse px-3 md:px-0 lg:flex-row gap-x-10 max-w-[1230px] w-full mx-auto justify-between ${
+        `items-center flex flex-col-reverse px-3 lg:px-0 lg:flex-row gap-x-10 max-w-[1230px] w-full mx-auto justify-between ${
           !isEven && "lg:flex-row-reverse "
         }` + className
       }

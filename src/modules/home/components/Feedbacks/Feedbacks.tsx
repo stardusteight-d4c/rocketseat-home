@@ -30,7 +30,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
         alt="asset/png"
         className="absolute top-0 right-0 z-0 w-[669px] h-[497px]"
       />
-      <div className="max-w-[1230px] px-3 md:px-0 w-full mx-auto relative z-10">
+      <div className="max-w-[1230px] px-3 lg:px-0 w-full mx-auto relative z-10">
         <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit">
           <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
             DEPOIMENTOS DE ALUNOS E ALUNAS_
@@ -49,13 +49,13 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
           </div>
         </div>
         <div className="relative">
-          <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-between">
+          <div className="flex flex-col space-y-8 lg:space-y-0 flex-wrap md:flex-row justify-between">
             <div className="flex flex-col gap-y-8">
               {feedbackFirstColData.slice(0, sliceValue).map((item, index) => (
                 <Feedback key={index} data={item} />
               ))}
             </div>
-            <div className="flex flex-col gap-y-8">
+            <div className="flex md:hidden lg:block flex-col gap-y-8">
               {feedbackSecondColData.slice(0, sliceValue).map((item, index) => (
                 <Feedback key={index} data={item} />
               ))}
