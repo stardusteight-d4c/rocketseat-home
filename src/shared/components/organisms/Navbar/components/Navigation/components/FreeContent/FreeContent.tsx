@@ -16,10 +16,10 @@ export const FreeContent: React.FC<FreeContentProps> = ({
       {contentList.map((item, index) => (
         <div
           key={index}
-          className="flex cursor-pointer relative hover:bg-neutral/[0.10] border border-transparent w-full rounded-lg hover:border-gray-600/[0.25] items-center p-4 justify-between"
+          className="flex cursor-pointer relative hover:bg-neutral/[0.10] border border-transparent w-full rounded-lg hover:border-gray-600/[0.25] items-center py-4 lg:p-4 justify-between"
         >
           <div className="flex items-center gap-2">
-            <h3 className="font-medium text-xl text-white">{item}</h3>
+            <h3 className="font-medium text-lg lg:text-xl text-white">{item}</h3>
           </div>
           <div className="flex items-center gap-x-2">
             <ArrowRight />

@@ -7,9 +7,10 @@ import aiEmblem from "@/public/assets/emblems/ai-emblem.svg"
 import reactEmblem from "@/public/assets/emblems/react-emblem.svg"
 import reactnativeEmblem from "@/public/assets/emblems/reactnative-emblem.svg"
 
-
 export function useNavigation() {
   const [hover, setHover] = useState(false)
+  const [click, setClick] = useState(false)
+
   const items: NavbarItems = [
     {
       title: "Formações",
@@ -88,6 +89,10 @@ export function useNavigation() {
       handleMouseEnter,
       handleMouseLeave,
       isHover: hover,
+    },
+    click: {
+      isClicked: click,
+      setClick,
     },
     items,
   }
