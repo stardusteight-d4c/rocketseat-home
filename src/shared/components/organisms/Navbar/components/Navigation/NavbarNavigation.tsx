@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowDown } from "@/shared/components/atoms/icons"
+import { Fade } from "react-awesome-reveal"
 
 import { useNavigation } from "./hooks/useNavigation"
 
@@ -46,7 +47,9 @@ const NavbarListItem: React.FC<NavbarListItemProps> = ({
         {item.dropdownContent && hover.isHover && (
           <div className="pt-[25px] mt-[35px] absolute left-1/2 -translate-x-1/2">
             <div className="bg-dark-str z-[100] pt-8 border-b border-b-gray-600/[0.25] shadow-md shadow-black/30 px-5 pb-10 text-gray-200 w-screen">
-              <NavbarDropdownContent item={item} />
+              <Fade duration={350}>
+                <NavbarDropdownContent item={item} />
+              </Fade>
             </div>
           </div>
         )}
