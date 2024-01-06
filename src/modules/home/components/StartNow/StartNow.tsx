@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-import whatsapp from "@/public/assets/icons/whatsapp.svg"
 import startNowBg from "@/public/assets/start-now-bg.svg"
 import startNow from "@/public/assets/start-now.svg"
 
@@ -39,7 +38,7 @@ export const StartNow: React.FC<StartNowProps> = ({
             <span className="uppercase">Embarque agora</span>
           </Button>
           <div className="flex items-center group cursor-pointer gap-x-2 text-white uppercase font-bold">
-            <Image src={whatsapp} alt="whatsapp/svg" />
+            <img src='/svg/icons/whatsapp.svg' alt="whatsapp/svg" />
             <div className="flex flex-col gap-y-[2px]">
               <span className="block text-[10px] group-hover:underline">
                 Tem alguma dúvida?

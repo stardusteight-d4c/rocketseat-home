@@ -4,7 +4,7 @@
 
 body,
 html {
-  @apply antialiased scroll-smooth bg-dark-str w-screen overflow-x-hidden;
+  @apply antialiased relative scroll-smooth bg-dark-str w-screen overflow-x-hidden;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

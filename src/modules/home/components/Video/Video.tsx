@@ -1,8 +1,10 @@
 "use client"
 
-import rocketShowcase from "@/public/rocket-showcase.png"
-import { Button } from "@/shared/components/atoms/ui/Button"
 import { useState } from "react"
+
+import rocketShowcase from "@/public/rocket-showcase.png"
+
+import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface VideoProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -46,7 +48,7 @@ export const Video: React.FC<VideoProps> = ({
                 autoPlay
                 controls
                 src="/rocketseat-showcase.mp4"
-                className="brightness-75 min-w-full min-h-full lg:rounded-t-lg h-[200px] xxs:h-[250px] xs:h-[300px] md:h-[400px] lg:h-[682px]"
+                className="min-w-full min-h-full lg:rounded-t-lg h-[200px] xxs:h-[250px] xs:h-[300px] md:h-[400px] lg:h-[682px]"
               />
             )}
           </div>
