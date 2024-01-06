@@ -1,5 +1,7 @@
 "use client"
 
+import { Fade } from "react-awesome-reveal"
+
 interface FaqItemProps extends React.HTMLAttributes<HTMLDivElement> {
   data: FaqItem
   position: number
@@ -36,13 +38,15 @@ export const FaqItem: React.FC<FaqItemProps> = ({
         <img
           src="/svg/icons/caret-down.svg"
           alt="caret_down/svg"
-          className={`${show === position && "rotate-180"}`}
+          className={`transition-all duration-300 ${show === position && "rotate-180"}`}
         />
       </div>
       {show === position && (
-        <p className="leading-[24px] block px-4 pb-8 pt-3 text-[#A8A8B3]">
-          {data.response}
-        </p>
+        <Fade duration={700}>
+          <p className="leading-[24px] block px-4 pb-8 pt-3 text-[#A8A8B3]">
+            {data.response}
+          </p>
+        </Fade>
       )}
     </div>
   )

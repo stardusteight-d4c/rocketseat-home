@@ -1,13 +1,9 @@
-import Image from "next/image"
-
 import { ArrowRight } from "@/shared/components/atoms/icons"
 
 interface FormationRedirectProps extends React.HTMLAttributes<HTMLDivElement> {
   formation: {
     title: string
-    emblem: {
-      src: string
-    }
+    emblem: string
     new: boolean
   }
 }
@@ -21,13 +17,13 @@ export const FormationRedirect: React.FC<FormationRedirectProps> = ({
         <div className="flex items-center gap-2">
           {formation.title === "Formação Full-Stack" ? (
             <img
-              src={formation.emblem.src}
+              src={formation.emblem}
               alt={`${formation.title.toLocaleLowerCase()}/svg`}
               className="w-[70px] h-[32px] lg:w-[81px] lg:h-[48px]"
             />
           ) : (
             <img
-              src={formation.emblem.src}
+              src={formation.emblem}
               alt={`${formation.title.toLocaleLowerCase()}/svg`}
               className="w-[32px] h-[32px] lg:w-[48px] lg:h-[48px]"
             />

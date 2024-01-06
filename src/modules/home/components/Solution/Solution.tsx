@@ -1,3 +1,7 @@
+'use client'
+
+import { Slide } from "react-awesome-reveal"
+
 import { SolutionCard } from "./components/SolutionCard"
 import { useSolution } from "./hooks"
 
@@ -36,9 +40,14 @@ export const Solution: React.FC<SolutionProps> = ({
         />
       </div>
       <div className="space-y-20 lg:space-y-[160px] relative z-30 pt-[555px] pb-20">
-        {solutionCardData.map((item, index) => (
-          <SolutionCard key={index} data={item} index={index} />
-        ))}
+        {solutionCardData.map((item, index) => {
+          const isEven = index % 2 === 0
+          return (
+            <Slide direction={isEven ? "left" : "right"} triggerOnce>
+              <SolutionCard key={index} data={item} index={index} />
+            </Slide>
+          )
+        })}
       </div>
     </section>
   )

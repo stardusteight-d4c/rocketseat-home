@@ -22,7 +22,7 @@ export const Hero: React.FC<HeroProps> = ({
         className="w-screen object-cover h-[800px]"
       />
       <div className="absolute px-3 lg:px-0 top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
-        <Slide direction="up">
+        <Slide direction="up" duration={700}>
           <div className="border border-gray-600/[0.50] bg-gradient-to-t from-dark-low to-dark-mid shadow-sm shadow-black/50 rounded-lg p-2 w-fit lg:mx-auto">
             <span className="font-bold uppercase bg-gradient-to-tr text-transparent from-brand-primary to-brand-secondary bg-clip-text">
               HELLO WORLD_
@@ -37,14 +37,14 @@ export const Hero: React.FC<HeroProps> = ({
             </span>
           </h1>
         </Slide>
-        <Slide direction="up">
+        <Slide direction="up" duration={700}>
           <span className="text-neutral text-xl max-w-[630px] w-full block mt-10 text-start lg:text-center lg:mx-auto leading-[28px]">
             A plataforma completa pra você aprender programação do zero no seu
             ritmo, se tornar Full Stack e se especializar em diversas
             tecnologias.
           </span>
         </Slide>
-        <Slide direction="up">
+        <Slide direction="up" duration={700}>
           <div>
             <div className="bg-dark-str mt-7 flex flex-col lg:flex-row items-center backdrop-blur-sm rounded-lg p-6 border border-gray-600/[0.50] w-full lg:w-fit mx-auto">
               <Button className="lg:!w-fit !py-4 text-sm hover:brightness-110 tracking-normal border text-white !border-brand-primary bg-brand-primary uppercase font-bold backdrop-blur-sm">

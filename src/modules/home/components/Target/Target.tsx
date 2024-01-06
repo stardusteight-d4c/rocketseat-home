@@ -1,3 +1,7 @@
+"use client"
+
+import { Fade } from "react-awesome-reveal"
+
 import { Button } from "@/shared/components/atoms/ui/Button"
 
 import { Purpose } from "./components/Purpose"

@@ -6,6 +6,7 @@ import { Button } from "@/shared/components/atoms/ui/Button"
 
 import { useFeedbacks } from "./hooks/useFeedbacks"
 import { Feedback } from "./components/Feedback"
+import { Fade } from "react-awesome-reveal"
 
 interface FeedbacksProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -49,20 +50,32 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
         </div>
         <div className="relative">
           <div className="flex flex-col space-y-8 lg:space-y-0 flex-wrap md:flex-row justify-between">
-            <div className="flex flex-col gap-y-8">
-              {feedbackFirstColData.slice(0, sliceValue).map((item, index) => (
-                <Feedback key={index} data={item} />
-              ))}
+            <div className="flex flex-col gap-y-8 z-50">
+              <Fade cascade direction="up" triggerOnce>
+                {feedbackFirstColData
+                  .slice(0, sliceValue)
+                  .map((item, index) => (
+                    <Feedback key={index} data={item} />
+                  ))}
+              </Fade>
             </div>
-            <div className="flex md:hidden lg:flex flex-col gap-y-8">
-              {feedbackSecondColData.slice(0, sliceValue).map((item, index) => (
-                <Feedback key={index} data={item} />
-              ))}
+            <div className="flex md:hidden lg:flex flex-col gap-y-8 z-50">
+              <Fade cascade direction="up" triggerOnce>
+                {feedbackSecondColData
+                  .slice(0, sliceValue)
+                  .map((item, index) => (
+                    <Feedback key={index} data={item} />
+                  ))}
+              </Fade>
             </div>
-            <div className="flex flex-col gap-y-8">
-              {feedbackThirdColData.slice(0, sliceValue).map((item, index) => (
-                <Feedback key={index} data={item} />
-              ))}
+            <div className="flex flex-col gap-y-8 z-50">
+              <Fade cascade direction="up" triggerOnce>
+                {feedbackThirdColData
+                  .slice(0, sliceValue)
+                  .map((item, index) => (
+                    <Feedback key={index} data={item} />
+                  ))}
+              </Fade>
             </div>
           </div>
           {sliceValue === 3 && (

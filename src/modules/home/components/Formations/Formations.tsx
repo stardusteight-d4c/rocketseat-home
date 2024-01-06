@@ -1,6 +1,9 @@
+"use client"
+
+import { Fade, Bounce } from "react-awesome-reveal"
+
 import { DiscoverCTA } from "./components/DiscoverCTA"
 import { FormationCard } from "./components/FormationCard"
-
 import { Info } from "./components/Info"
 
 import { useFormations } from "./hooks/useFormations"
@@ -39,9 +42,11 @@ export const Formations: React.FC<FormationsProps> = ({
         <div className="max-w-[1230px] w-full">
           <div className="border-t h-[0px] w-full border-t-gray-600/[0.50] my-10" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-[34px] gap-7 items-start">
-            {infoData.map((item, index) => (
-              <Info key={index} data={item} />
-            ))}
+            <Fade cascade duration={700} triggerOnce>
+              {infoData.map((item, index) => (
+                <Info key={index} data={item} />
+              ))}
+            </Fade>
           </div>
           <DiscoverCTA />
         </div>
