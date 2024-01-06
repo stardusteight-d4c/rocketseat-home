@@ -16,7 +16,7 @@ export const DiscoverCTA: React.FC<DiscoverCTAProps> = ({
       {...props}
     >
       <div className="flex lg:items-center flex-col lg:flex-row gap-6">
-        <img src="/svg/discover.svg" alt="discover/svg" />
+        <img src="/svg/discover.svg" alt="discover/svg" className="w-[60px]" />
         <div className="flex flex-col gap-y-[10px]">
           <h5 className="text-white font-bold text-xl leading-[28px]">
             Aprenda programação do zero e DE GRAÇA
