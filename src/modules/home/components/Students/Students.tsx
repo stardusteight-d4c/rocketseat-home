@@ -1,6 +1,3 @@
-import Image from "next/image"
-
-import students from "@/public/assets/students.png"
 import { useStudents } from "./hooks"
 
 interface StudentsProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -27,7 +24,7 @@ export const Students: React.FC<StudentsProps> = ({
           <div className="border-t h-[0px] w-full border-t-gray-600/[0.50] my-4" />
           <div className="flex flex-wrap lg:flex-nowrap gap-10 items-center justify-center">
             {companies.map((company, index) => (
-              <Image
+              <img
                 key={index}
                 src={company.src}
                 alt={`${company.name
@@ -39,7 +36,11 @@ export const Students: React.FC<StudentsProps> = ({
         </div>
         <div>
           <div className="flex items-center text-sm lg:text-base gap-x-6 text-neutral leading-[24px]">
-            <Image src={students} alt="students/png" className="w-[147px]" />
+            <img
+              src="/image/students.png"
+              alt="students/png"
+              className="w-[147px]"
+            />
             <span className="max-w-[257px] w-full">
               Mais de <strong>55 mil</strong> alunos e alunas no Brasil e no
               mundo. Junte-se a eles.

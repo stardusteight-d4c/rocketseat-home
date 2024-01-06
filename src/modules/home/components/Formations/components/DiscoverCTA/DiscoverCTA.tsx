@@ -1,7 +1,5 @@
-import discover from "@/public/assets/discover.svg"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 import { Button } from "@/shared/components/atoms/ui/Button"
-import Image from "next/image"
 
 interface DiscoverCTAProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -18,7 +16,7 @@ export const DiscoverCTA: React.FC<DiscoverCTAProps> = ({
       {...props}
     >
       <div className="flex lg:items-center flex-col lg:flex-row gap-6">
-        <Image src={discover} alt="discover/svg" />
+        <img src="/svg/discover.svg" alt="discover/svg" />
         <div className="flex flex-col gap-y-[10px]">
           <h5 className="text-white font-bold text-xl leading-[28px]">
             Aprenda programação do zero e DE GRAÇA

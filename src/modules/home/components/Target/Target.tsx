@@ -1,8 +1,3 @@
-import Image from "next/image"
-
-import workGroup from "@/public/assets/work-group.png"
-import arrowRight from "@/public/assets/icons/arrow-right.svg"
-
 import { Button } from "@/shared/components/atoms/ui/Button"
 
 import { Purpose } from "./components/Purpose"
@@ -47,7 +42,7 @@ export const Target: React.FC<TargetProps> = ({
             ))}
           </div>
           <img
-            src={workGroup.src}
+            src="/image/work-group.png"
             alt="work_group/png"
             className="w-full lg:w-[533px] lg:h-[419px] mt-[60px] lg:mt-0 lg:object-cover"
           />
@@ -72,7 +67,11 @@ export const Target: React.FC<TargetProps> = ({
           Transforme sua carreira em programação na Rocketseat
         </h2>
         <div className="flex items-center flex-col lg:flex-row mt-6 lg:mt-0 gap-6">
-          <Image src={arrowRight} alt="arrow_right/svg" className="rotate-90 lg:rotate-0" />
+          <img
+            src="/svg/icons/arrow-right.svg"
+            alt="arrow_right/svg"
+            className="rotate-90 lg:rotate-0"
+          />
           <Button className="!w-full lg:!w-fit !py-4 !bg-white text-sm hover:brightness-110 tracking-normal border !border-white !text-brand-primary uppercase font-bold backdrop-blur-sm">
             <span className="uppercase">COMECE A ESTUDAR AGORA</span>
           </Button>

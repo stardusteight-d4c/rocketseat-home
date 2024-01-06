@@ -1,10 +1,3 @@
-import discord from "@/public/assets/icons/discord.svg"
-import instagram from "@/public/assets/icons/instagram.svg"
-import linkedIn from "@/public/assets/icons/linkedin.svg"
-import youtube from "@/public/assets/icons/youtube.svg"
-import facebook from "@/public/assets/icons/facebook.svg"
-import x from "@/public/assets/icons/x.svg"
-
 export function useFooter() {
   const footerData: FooterData[] = [
     {
@@ -60,16 +53,16 @@ export function useFooter() {
   ]
 
   const socialLinks: SocialLinks[] = [
-    { title: "Discord", icon: discord.src },
-    { title: "Instagram", icon: instagram.src },
-    { title: "LinkedIn", icon: linkedIn.src },
-    { title: "Youtube", icon: youtube.src },
-    { title: "Facebook", icon: facebook.src },
-    { title: "X", icon: x.src },
+    { title: "Discord", icon: "/svg/icons/discord.svg" },
+    { title: "Instagram", icon: "/svg/icons/instagram.svg" },
+    { title: "LinkedIn", icon: "/svg/icons/linkedin.svg" },
+    { title: "Youtube", icon: "/svg/icons/youtube.svg" },
+    { title: "Facebook", icon: "/svg/icons/facebook.svg" },
+    { title: "X", icon: "/svg/icons/x.svg" },
   ]
 
   return {
     footerData,
-    socialLinks
+    socialLinks,
   }
 }

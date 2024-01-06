@@ -1,34 +1,28 @@
-import ifood from "@/public/assets/ifood.svg"
-import globo from "@/public/assets/globo.svg"
-import c6bank from "@/public/assets/c6bank.svg"
-import nubank from "@/public/assets/nubank.svg"
-import mercadolivre from "@/public/assets/mercadolivre.svg"
-
 export function useStudents() {
   const companies = [
     {
-      src: ifood,
+      src: "/svg/ifood.svg",
       name: "iFood",
     },
     {
-      src: globo,
+      src: "/svg/globo.svg",
       name: "Globo",
     },
     {
-      src: c6bank,
+      src: "/svg/c6bank.svg",
       name: "C6 Bank",
     },
     {
-      src: nubank,
+      src: "/svg/nubank.svg",
       name: "Nubank",
     },
 
     {
-      src: mercadolivre,
+      src: "/svg/mercadolivre.svg",
       name: "Mercado Livre",
     },
   ]
-  
+
   return {
     companies,
   }

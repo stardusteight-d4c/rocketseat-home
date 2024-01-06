@@ -1,7 +1,3 @@
-import Image from "next/image"
-
-import play from "@/public/assets/icons/play.svg"
-
 interface ButtonProps
   extends Omit<React.HTMLAttributes<HTMLButtonElement>, "title"> {
   children?: React.ReactNode
@@ -26,11 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
         }
         {...props}
       >
-        {children ? (
-          <>{children}</>
-        ) : (
-          <span>{title}</span>
-        )}
+        {children ? <>{children}</> : <span>{title}</span>}
       </button>
     )
   }
@@ -43,7 +35,7 @@ export const Button: React.FC<ButtonProps> = ({
         }
       >
         <button className="rounded-full w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] bg-white/10 flex items-center justify-center">
-          <Image src={play} alt="play/svg" />
+          <img src="/svg/icons/play.svg" alt="play/svg" />
         </button>
         <span className="max-w-[215px] font-bold text-sm lg:text-lg w-full text-center leading-[24px]">
           {title}

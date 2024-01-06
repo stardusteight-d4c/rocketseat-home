@@ -2,13 +2,10 @@
 
 import { useState } from "react"
 
-import menu from "@/public/assets/menu.svg"
-import close from "@/public/assets/close.svg"
-import whatsappLogo from "@/public/assets/icons/whatsapp-logo.svg"
-
-import { NavbarMobileNavigation } from "../Navigation/NavbarMobileNavigation"
 import { Button } from "@/shared/components/atoms/ui/Button"
 import { ArrowRight } from "@/shared/components/atoms/icons"
+
+import { NavbarMobileNavigation } from "../Navigation/NavbarMobileNavigation"
 
 interface NavbarRootProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, "children"> {
@@ -28,7 +25,7 @@ export const NavbarRoot: React.FC<NavbarRootProps> = ({
 
   return (
     <>
-      <div className="fixed z-[900] inset-x-0">
+      <div className="lg:fixed z-[900] lg:inset-x-0">
         <nav
           className={
             "bg-dark-str z-[100] w-full relative border-b border-b-gray-600/[0.25] px-4 lg:px-0 h-fit py-4 lg:py-6 flex items-center justify-between " +
@@ -43,14 +40,14 @@ export const NavbarRoot: React.FC<NavbarRootProps> = ({
                 <div className="border-l h-[28px] block lg:hidden w-0 border-l-gray-600/[0.50] mx-2" />
                 {openMenu ? (
                   <img
-                    src={close.src}
+                    src="/svg/icons/close.svg"
                     alt="close/svg"
                     onClick={() => setOpenMenu(false)}
                     className="block lg:hidden cursor-pointer"
                   />
                 ) : (
                   <img
-                    src={menu.src}
+                    src="/svg/icons/menu.svg"
                     alt="menu/svg"
                     onClick={() => setOpenMenu(true)}
                     className="block lg:hidden cursor-pointer"
@@ -62,7 +59,7 @@ export const NavbarRoot: React.FC<NavbarRootProps> = ({
                     <div className="flex flex-col gap-y-4 px-4 py-6">
                       <Button className="w-full lg:!max-w-[190px] text-center !py-4 bg-dark-low !text-sm tracking-normal border text-white border-darlbg-dark-low hover:!border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm">
                         <img
-                          src={whatsappLogo.src}
+                          src="/svg/whatsapp-logo.svg"
                           className="w-[18px] h-[18px]"
                         />
                         <span className="text-white uppercase whitespace-nowrap">
@@ -97,7 +94,7 @@ export const NavbarRoot: React.FC<NavbarRootProps> = ({
           </div>
         </nav>
       </div>
-      <div className="h-[73px] lg:h-[100px]" />
+      <div className="hidden lg:block lg:h-[100px]" />
     </>
   )
 }

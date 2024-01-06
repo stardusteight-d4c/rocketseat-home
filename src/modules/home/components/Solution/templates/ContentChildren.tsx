@@ -1,21 +1,12 @@
-import html from "@/public/assets/icons/html.svg"
-import css from "@/public/assets/icons/css.svg"
-import js from "@/public/assets/icons/js.svg"
-import react from "@/public/assets/icons/react.svg"
-import node from "@/public/assets/icons/node.svg"
-import reactNative from "@/public/assets/icons/react-native.svg"
-import ts from "@/public/assets/icons/ts.svg"
-import tailwind from "@/public/assets/icons/tailwind.svg"
-
 const assetsData = [
-  html.src,
-  css.src,
-  js.src,
-  react.src,
-  node.src,
-  reactNative.src,
-  ts.src,
-  tailwind.src,
+  "/svg/icons/html.svg",
+  "/svg/icons/css.svg",
+  "/svg/icons/js.svg",
+  "/svg/icons/react.svg",
+  "/svg/icons/node.svg",
+  "/svg/icons/react-native.svg",
+  "/svg/icons/ts.svg",
+  "/svg/icons/tailwind.svg",
 ]
 
 interface ContentChildrenProps extends React.HTMLAttributes<HTMLDivElement> {}

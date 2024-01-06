@@ -1,9 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 
-import play from "@/public/assets/icons/play-purple.svg"
 import { PlayerModal } from "@/shared/components/molecules/PlayerModal"
 
 interface FeedbackProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -67,7 +65,11 @@ export const Feedback: React.FC<FeedbackProps> = ({
               onClick={() => setOpenModal(true)}
               className="rounded-full w-[45px] h-[45px] absolute z-10 right-4 bottom-5 bg-white flex items-center justify-center"
             >
-              <Image src={play} alt="play/svg" className="-mr-[4px]" />
+              <img
+                src="/svg/icons/play-purple.svg"
+                alt="play/svg"
+                className="-mr-[4px]"
+              />
             </button>
           </div>
           {openModal && (

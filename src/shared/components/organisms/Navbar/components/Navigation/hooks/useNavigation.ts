@@ -1,12 +1,5 @@
 import { useState } from "react"
 
-import javaEmblem from "@/public/assets/emblems/java-emblem.svg"
-import fullstackEmblem from "@/public/assets/emblems/fullstack-emblem.svg"
-import nodejsEmblem from "@/public/assets/emblems/nodejs-emblem.svg"
-import aiEmblem from "@/public/assets/emblems/ai-emblem.svg"
-import reactEmblem from "@/public/assets/emblems/react-emblem.svg"
-import reactnativeEmblem from "@/public/assets/emblems/reactnative-emblem.svg"
-
 export function useNavigation() {
   const [hover, setHover] = useState(false)
   const [click, setClick] = useState(false)
@@ -18,32 +11,32 @@ export function useNavigation() {
         formations: [
           {
             title: "Formação em Java",
-            emblem: javaEmblem,
+            emblem: "/svg/emblems/java-emblem.svg",
             new: true,
           },
           {
             title: "Formação em IA",
-            emblem: aiEmblem,
+            emblem: "/svg/emblems/ai-emblem.svg",
             new: true,
           },
           {
             title: "Formação Full-Stack",
-            emblem: fullstackEmblem,
+            emblem: "/svg/emblems/fullstack-emblem.svg",
             new: false,
           },
           {
             title: "Formação em React",
-            emblem: reactEmblem,
+            emblem: "/svg/emblems/react-emblem.svg",
             new: false,
           },
           {
             title: "Formação em Node.JS",
-            emblem: nodejsEmblem,
+            emblem: "/svg/emblems/nodejs-emblem.svg",
             new: false,
           },
           {
             title: "Formação em React Native",
-            emblem: reactnativeEmblem,
+            emblem: "/svg/emblems/reactnative-emblem.svg",
             new: false,
           },
         ],

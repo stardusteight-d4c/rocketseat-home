@@ -1,8 +1,3 @@
-import Image from "next/image"
-
-import solutionBackground from "@/public/assets/content-section-bg.webp"
-import arrowDown from "@/public/assets/icons/arrow-down.svg"
-
 import { SolutionCard } from "./components/SolutionCard"
 import { useSolution } from "./hooks"
 
@@ -16,10 +11,9 @@ export const Solution: React.FC<SolutionProps> = ({
 
   return (
     <section className={"bg-dark-str relative " + className} {...props}>
-      <Image
-        src={solutionBackground}
+      <img
+        src="/image/content-section-bg.webp"
         alt="solution_background/png"
-        quality={100}
         className="w-screen absolute inset-x-0 h-[30vh] lg:h-[75vh] object-fill lg:object-cover border-t border-t-gray-600/[0.50]"
       />
       <div className="absolute px-3 lg:px-0 top-[80px] left-1/2 -translate-x-1/2 z-50 w-screen">
@@ -35,7 +29,11 @@ export const Solution: React.FC<SolutionProps> = ({
         <span className="text-neutral text-xl max-w-[530px] w-full block mt-6 lg:text-center lg:mx-auto leading-[28px]">
           Veja todos os benefícios exclusivos para assinantes da Rocketseat
         </span>
-        <Image src={arrowDown} alt="arrow_down/svg" className="mx-auto mt-6" />
+        <img
+          src="/svg/icons/arrow-down.svg"
+          alt="arrow_down/svg"
+          className="mx-auto mt-6"
+        />
       </div>
       <div className="space-y-20 lg:space-y-[160px] relative z-30 pt-[555px] pb-20">
         {solutionCardData.map((item, index) => (

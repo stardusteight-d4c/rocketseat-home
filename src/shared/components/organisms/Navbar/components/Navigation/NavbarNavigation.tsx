@@ -1,10 +1,10 @@
 "use client"
 
-import { ArrowDown } from "@/shared/components/atoms/icons"
 import { Fade } from "react-awesome-reveal"
 
-import { useNavigation } from "./hooks/useNavigation"
+import { ArrowDown } from "@/shared/components/atoms/icons"
 
+import { useNavigation } from "./hooks/useNavigation"
 import { DiscoverCard, FormationRedirect, FreeContent } from "./components"
 
 interface NavbarNavigationProps

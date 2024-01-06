@@ -1,7 +1,5 @@
 "use client"
 
-import caretDown from "@/public/assets/icons/caret-down.svg"
-
 interface FaqItemProps extends React.HTMLAttributes<HTMLDivElement> {
   data: FaqItem
   position: number
@@ -36,7 +34,7 @@ export const FaqItem: React.FC<FaqItemProps> = ({
           </h4>
         </div>
         <img
-          src={caretDown.src}
+          src="/svg/icons/caret-down.svg"
           alt="caret_down/svg"
           className={`${show === position && "rotate-180"}`}
         />

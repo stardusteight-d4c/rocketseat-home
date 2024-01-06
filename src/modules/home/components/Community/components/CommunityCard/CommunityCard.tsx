@@ -1,7 +1,5 @@
 import Link from "next/link"
 
-import targetLink from "@/public/assets/icons/target-link.svg"
-
 import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface CommunityCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -34,7 +32,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
             <span className="text-white whitespace-nowrap">
               {data.buttonTitle}
             </span>
-            <img src={targetLink.src} />
+            <img src="/svg/icons/target-link.svg" />
           </Button>
         </Link>
       )}

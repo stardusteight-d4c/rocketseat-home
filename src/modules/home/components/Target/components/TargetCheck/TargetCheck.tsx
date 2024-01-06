@@ -1,6 +1,3 @@
-import check from "@/public/assets/icons/check.svg"
-import Image from "next/image"
-
 interface TargetCheckProps extends React.HTMLAttributes<HTMLDivElement> {
   target: string
 }
@@ -17,8 +14,10 @@ export const TargetCheck: React.FC<TargetCheckProps> = ({
       }
       {...props}
     >
-      <Image src={check} alt="check/svg" />
-      <span className="text-center text-neutral leading-[24px] max-w-[223px] w-full">{target}</span>
+      <img src="/svg/icons/check.svg" alt="check/svg" />
+      <span className="text-center text-neutral leading-[24px] max-w-[223px] w-full">
+        {target}
+      </span>
     </div>
   )
 }

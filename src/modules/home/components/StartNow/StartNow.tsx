@@ -1,8 +1,5 @@
 import Image from "next/image"
 
-import startNowBg from "@/public/assets/start-now-bg.svg"
-import startNow from "@/public/assets/start-now.svg"
-
 import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface StartNowProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -17,12 +14,12 @@ export const StartNow: React.FC<StartNowProps> = ({
       {...props}
     >
       <img
-        src={startNowBg.src}
+        src="/svg/start-now-bg.svg"
         alt="start_now_bg/svg"
         className="absolute z-0 inset-x-0 bottom-0 pointer-events-none"
       />
       <img
-        src={startNow.src}
+        src="/svg/start-now.svg"
         alt="start_now/svg"
         className="absolute z-0 left-1/2 -translate-x-1/2 -top-[160px]"
       />
@@ -38,7 +35,7 @@ export const StartNow: React.FC<StartNowProps> = ({
             <span className="uppercase">Embarque agora</span>
           </Button>
           <div className="flex items-center group cursor-pointer gap-x-2 text-white uppercase font-bold">
-            <img src='/svg/icons/whatsapp.svg' alt="whatsapp/svg" />
+            <img src="/svg/icons/whatsapp.svg" alt="whatsapp/svg" />
             <div className="flex flex-col gap-y-[2px]">
               <span className="block text-[10px] group-hover:underline">
                 Tem alguma dúvida?

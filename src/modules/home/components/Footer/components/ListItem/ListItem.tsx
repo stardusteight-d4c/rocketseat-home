@@ -1,5 +1,3 @@
-import whatsappLogo from "@/public/assets/icons/whatsapp-logo.svg"
-
 import { ArrowRight } from "@/shared/components/atoms/icons"
 import { Button } from "@/shared/components/atoms/ui/Button"
 
@@ -23,7 +21,7 @@ export const ListItem: React.FC<ListItemProps> = ({
             <ArrowRight className="-mb-[3px]" />
           </Button>
           <Button className="w-full lg:!max-w-[190px] text-center !py-4 bg-dark-low !text-sm tracking-normal border text-white border-darlbg-dark-low hover:!border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm">
-            <img src={whatsappLogo.src} className="w-[18px] h-[18px]" />
+            <img src="/svg/whatsapp-logo.svg" className="w-[18px] h-[18px]" />
             <span className="text-white uppercase whitespace-nowrap">
               {data.items[1].title}
             </span>
@@ -38,7 +36,10 @@ export const ListItem: React.FC<ListItemProps> = ({
       return (
         <ul className="flex flex-col gap-y-2">
           {data.items.map((item, index) => (
-            <li key={index} className="text-[#E1E1E6] block w-fit cursor-pointer hover:underline leading-[24px]">
+            <li
+              key={index}
+              className="text-[#E1E1E6] block w-fit cursor-pointer hover:underline leading-[24px]"
+            >
               {item.title}
             </li>
           ))}

@@ -2,8 +2,6 @@
 
 import { useState } from "react"
 
-import rocketShowcase from "@/public/rocket-showcase.png"
-
 import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface VideoProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -28,7 +26,7 @@ export const Video: React.FC<VideoProps> = ({
             {!play && (
               <>
                 <img
-                  src={rocketShowcase.src}
+                  src="/image/rocket-showcase.png"
                   alt="rocket_showcase"
                   className="brightness-75 w-full lg:rounded-t-lg h-[200px] xxs:h-[250px] xs:h-[300px] md:h-[400px] lg:h-[682px]"
                 />

@@ -2,15 +2,10 @@
 
 import { useState } from "react"
 
-import asset from "@/public/assets/feedback-section-asset.png"
-import arrowDown from "@/public/assets/icons/arrow-down-white.svg"
-import plus from "@/public/assets/icons/plus.svg"
-import minus from "@/public/assets/icons/minus.svg"
+import { Button } from "@/shared/components/atoms/ui/Button"
 
 import { useFeedbacks } from "./hooks/useFeedbacks"
 import { Feedback } from "./components/Feedback"
-import { Button } from "@/shared/components/atoms/ui/Button"
-import Image from "next/image"
 
 interface FeedbacksProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -26,7 +21,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
   return (
     <section className={"bg-dark-mid py-20 relative " + className} {...props}>
       <img
-        src={asset.src}
+        src="/image/feedback-section-asset.png"
         alt="asset/png"
         className="absolute top-0 right-0 z-0 w-[669px] h-[497px]"
       />
@@ -45,7 +40,11 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
             <span className="w-[200px] block text-lg text-white/80 leading-[28px]">
               O próximo depoimento pode ser seu!
             </span>
-            <img src={arrowDown.src} alt="arrow_down/svg" className="w-8 h-8" />
+            <img
+              src="/svg/icons/arrow-down-white.svg"
+              alt="arrow_down/svg"
+              className="w-8 h-8"
+            />
           </div>
         </div>
         <div className="relative">
@@ -55,7 +54,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
                 <Feedback key={index} data={item} />
               ))}
             </div>
-            <div className="flex md:hidden lg:block flex-col gap-y-8">
+            <div className="flex md:hidden lg:flex flex-col gap-y-8">
               {feedbackSecondColData.slice(0, sliceValue).map((item, index) => (
                 <Feedback key={index} data={item} />
               ))}
@@ -73,7 +72,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
                 onClick={() => setSliceValue(6)}
                 className="!w-fit px-4 py-[10px] mx-auto bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
               >
-                <Image src={plus} alt="plus/svg" />
+                <img src="/svg/icons/plus.svg" alt="plus/svg" />
                 <span className="text-white">Mostrar mais</span>
               </Button>
             </div>
@@ -84,7 +83,7 @@ export const Feedbacks: React.FC<FeedbacksProps> = ({
                 onClick={() => setSliceValue(3)}
                 className="!w-fit px-4 py-[10px] mx-auto mt-4 lg:mt-0 bg-transparent text-sm tracking-normal border text-white !border-brand-primary hover:bg-brand-primary uppercase font-bold backdrop-blur-sm"
               >
-                <Image src={minus} alt="minus/svg" />
+                <img src="/svg/icons/minus.svg" alt="minus/svg" />
                 <span className="text-white">Mostrar menos</span>
               </Button>
             </div>

@@ -1,6 +1,3 @@
-import Image from "next/image"
-
-import discoverLogo from "@/public/assets/discover-light.svg"
 import { Button } from "@/shared/components/atoms/ui/Button"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 
@@ -20,10 +17,13 @@ export const DiscoverCard: React.FC<DiscoverCardProps> = ({
   ...props
 }: DiscoverCardProps) => {
   return (
-    <div className="p-6 w-full rounded-lg bg-[#4863F7] shadow-md shadow-black/30 text-white" {...props}>
+    <div
+      className="p-6 w-full rounded-lg bg-[#4863F7] shadow-md shadow-black/30 text-white"
+      {...props}
+    >
       <div className="flex flex-col gap-y-4">
-        <Image
-          src={discoverLogo}
+        <img
+          src="/svg/discover-light.svg"
           width="162"
           height="40"
           alt="discover_logo/svg"

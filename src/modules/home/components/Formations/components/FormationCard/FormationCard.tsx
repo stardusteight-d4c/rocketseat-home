@@ -1,8 +1,5 @@
 import Image from "next/image"
 
-import rocket from "@/public/assets/rocket.png"
-import vector from "@/public/assets/vector.svg"
-
 import { Button } from "@/shared/components/atoms/ui/Button"
 import { ArrowRight } from "@/shared/components/atoms/icons"
 
@@ -32,7 +29,11 @@ export const FormationCard: React.FC<FormationCardProps> = ({
           />
           {data.launching && (
             <div className="flex items-center gap-x-[4px] px-2 py-1 top-0 left-0 absolute bg-gradient-to-tr from-brand-primary to-brand-secondary rounded-br-md rounded-tl-sm shadow-md shadow-black/30">
-              <Image src={rocket} alt="rocket/png" className="w-[16px]" />
+              <img
+                src="/image/rocket.png"
+                alt="rocket/png"
+                className="w-[16px]"
+              />
               <span className="font-bold text-xs text-white tracking-wide">
                 LANÇAMENTO
               </span>
@@ -40,7 +41,7 @@ export const FormationCard: React.FC<FormationCardProps> = ({
           )}
           <div className="absolute -top-[1px] -right-[1px]">
             <div className="relative">
-              <Image src={vector} alt="vector/gif" />
+              <img src="/svg/vector.svg" alt="vector/svg" />
               <div className="absolute top-1/2 -translate-y-1/2 left-[26px] flex items-center gap-x-[6px]">
                 {Array.from({ length: data.level }).map((_, index) => (
                   <div

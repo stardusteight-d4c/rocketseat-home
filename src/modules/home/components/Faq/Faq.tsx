@@ -2,11 +2,10 @@
 
 import { useState } from "react"
 
-import avatars from "@/public/assets/is-avatars.webp"
+import { Button } from "@/shared/components/atoms/ui/Button"
 
 import { FaqItem } from "./components/FaqItem"
 import { useFaq } from "./hooks/useFaq"
-import { Button } from "@/shared/components/atoms/ui/Button"
 
 interface FaqProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -47,7 +46,11 @@ export const Faq: React.FC<FaqProps> = ({ className, ...props }: FaqProps) => {
           ))}
           <div className="bg-dark-mid mt-20 w-full rounded-lg border border-gray-600/[0.50] p-6 flex flex-col lg:flex-row lg:items-center justify-between">
             <div className="flex flex-col">
-              <img src={avatars.src} alt="avtars/webp" className="w-[122px] h-[47px]" />
+              <img
+                src="/image/is-avatars.webp"
+                alt="avatars/webp"
+                className="w-[122px] h-[47px]"
+              />
               <h5 className="mt-[19px] mb-[6px] text-[#E1E1E6] text-lg font-bold leading-[28px]">
                 Ficou com alguma dúvida?
               </h5>

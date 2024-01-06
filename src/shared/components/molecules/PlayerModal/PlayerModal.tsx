@@ -1,7 +1,5 @@
 import ReactDOM from "react-dom"
 
-import closeIcon from "@/public/assets/icons/close-menu.svg"
-
 interface Props {
   setShowPlayer: React.Dispatch<React.SetStateAction<boolean>>
   baseUrl: string
@@ -17,11 +15,11 @@ export const PlayerModal = ({ setShowPlayer, baseUrl }: Props) => {
             className="cursor-pointer absolute -right-4 -top-14 flex items-center gap-x-1"
           >
             <span className="text-lg font-bold">Fechar</span>
-            <img src={closeIcon.src} className="w-14" />
+            <img src="/svg/icons/close-menu.svg" className="w-14" />
           </div>
           <iframe
             src={`${baseUrl}?color=white&theme=dark&fs=0&modestbranding=0&autoplay=1`}
-            className="outline-none border border-[#FFFFFF2E] w-full h-[490px]" 
+            className="outline-none border border-[#FFFFFF2E] w-full h-[490px]"
           />
         </div>
       </div>
