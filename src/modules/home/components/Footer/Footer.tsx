@@ -1,3 +1,5 @@
+"use client"
+
 import { ArrowRight } from "@/shared/components/atoms/icons"
 import { Button } from "@/shared/components/atoms/ui/Button"
 
@@ -11,6 +13,13 @@ export const Footer: React.FC<FooterProps> = ({
   ...props
 }: FooterProps) => {
   const { footerData, socialLinks } = useFooter()
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
 
   return (
     <section
@@ -71,7 +80,10 @@ export const Footer: React.FC<FooterProps> = ({
               className="-rotate-90 antialiased -mb-[2px]"
             />
           </span>
-          <Button className="!w-fit flex gap-x-1 px-4 py-[10px] bg-transparent hover:bg-neutral/[0.10] font-bold text-sm tracking-normal bg-brand-primary text-white uppercase backdrop-blur-sm">
+          <Button
+            onClick={scrollToTop}
+            className="!w-fit flex gap-x-1 px-4 py-[10px] bg-transparent hover:bg-neutral/[0.10] font-bold text-sm tracking-normal bg-brand-primary text-white uppercase backdrop-blur-sm"
+          >
             Voltar ao topo
             <span>
               <img
