@@ -48,3 +48,6 @@ Here are some important elements related to interface and usability:
 
 A well-designed interface and friendly user experience are key to attracting and retaining visitors, converting them into students and building a trusting relationship with the coding school.
 
+![screen](./screenshots/screen-desktop.png)
+
+<p align="center">Project made with :blue_heart: by <a href="https://github.com/stardusteight-d4c">Gabriel Sena</a></p>
